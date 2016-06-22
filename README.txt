@@ -1,1 +1,1 @@
-CS assignments
+CS assignments in McGill
