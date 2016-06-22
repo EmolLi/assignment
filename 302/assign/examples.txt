@@ -1,0 +1,152 @@
+(* Example executions.  
+
+F# Interactive for F# 3.1 (Open Source Edition)
+Freely distributed under the Apache 2.0 Open Source License
+
+For help type #help;;
+
+> 
+type exptree =
+  | Var of char
+  | Expr of char * exptree * exptree
+
+> 
+val charSet : char list =
+  ['a'; 'b'; 'c'; 'd'; 'e'; 'f'; 'g'; 'h'; 'i'; 'j'; 'k'; 'l'; 'm'; 'n'; 'o';
+   'p'; 'q'; 'r'; 's'; 't'; 'u'; 'v'; 'w'; 'x'; 'y'; 'z']
+
+> 
+val isin : x:char -> L:char list -> bool
+
+> 
+val parse : inputexp:string -> exptree
+
+> let example1 = "a+b";;
+
+val example1 : string = "a+b"
+
+> let t1 = parse(example1);;
+
+val t1 : exptree = Expr ('+',Var 'a',Var 'b')
+
+> let example2 = "a+b+c+d";;
+
+val example2 : string = "a+b+c+d"
+
+> let t2 = parse(example2);;
+
+val t2 : exptree =
+  Expr ('+',Var 'a',Expr ('+',Var 'b',Expr ('+',Var 'c',Var 'd')))
+
+> let example3 = "a*b+c";;
+
+val example3 : string = "a*b+c"
+
+> let t3 = parse(example3);;
+
+val t3 : exptree = Expr ('+',Expr ('*',Var 'a',Var 'b'),Var 'c')
+
+> let example4 = "a*(b+c)";;
+
+val example4 : string = "a*(b+c)"
+
+> let t4 = parse(example4);;
+
+val t4 : exptree = Expr ('*',Var 'a',Expr ('+',Var 'b',Var 'c'))
+
+> let example = "(a+(b+(c*d)+e)*f)*g";;
+
+val example : string = "(a+(b+(c*d)+e)*f)*g"
+
+> let t5 = parse(example);;
+
+val t5 : exptree =
+  Expr
+    ('*',
+     Expr
+       ('+',Var 'a',
+        Expr
+          ('*',
+           Expr ('+',Var 'b',Expr ('+',Expr ('*',Var 'c',Var 'd'),Var 'e')),
+           Var 'f')),Var 'g')
+
+> 
+val mutable tempstore : int = 0
+
+> 
+val codegen : e:exptree -> unit
+
+> codegen(t1);;
+LOAD  a
+ADD  b
+val it : unit = ()
+> codegen(t2);;
+LOAD  a
+STORE 1
+LOAD  b
+STORE 2
+LOAD  c
+ADD  d
+ADD 2
+ADD 1
+val it : unit = ()
+> codegen(t3);;
+LOAD  a
+MUL  b
+ADD  c
+val it : unit = ()
+> codegen(t4);;
+LOAD  a
+STORE 1
+LOAD  b
+ADD  c
+MUL 1
+val it : unit = ()
+> codegen(t5);;
+LOAD  a
+STORE 1
+LOAD  b
+STORE 2
+LOAD  c
+MUL  d
+ADD  e
+ADD 2
+MUL  f
+ADD 1
+MUL  g
+val it : unit = ()
+> #quit;;
+
+- Exit...
+
+Process inferior-fsharp finished
+
+*)
+
+(* Examples showing the parser on bad input strings.
+
+> let e1 = "a++b";;
+val e1 : string = "a++b"
+> parse(e1);;
+sym is : +.
+System.Exception: In primary
+Stopped due to error
+> let e2 = "a+b*c ";;
+val e2 : string = "a+b*c "
+> parse(e2);;
+val it : exptree = Expr ('+',Var 'a',Expr ('*',Var 'b',Var 'c'))
+> let e3 = "a + b * c";;
+val e3 : string = "a + b * c"
+> parse(e3);;
+val it : exptree = Var 'a'
+> let e4 = "a+b*c)";;
+val e4 : string = "a+b*c)"
+> parse (e4);;
+val it : exptree = Expr ('+',Var 'a',Expr ('*',Var 'b',Var 'c'))
+let e5 = "a*(b+c";;
+val e5 : string = "a*(b+c"
+> parse(e5);;
+System.Exception: Mismatched parens
+  at FSI_0005.primary@29
+  Stopped due to error
+*)

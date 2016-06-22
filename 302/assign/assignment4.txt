@@ -1,0 +1,90 @@
+module hw4
+
+(* Assignment 4 *) (* Do not edit this line. *)
+(* Student name: Stack Exchange Lover, Id Number: 66666666 *) (* Edit this line. *)
+
+
+type typExp =
+  | TypInt
+  | TypVar of char
+  | Arrow of typExp * typExp
+  | Lst of typExp
+
+type substitution = (char * typExp) list
+
+(* check if a variable occurs in a term *)
+let rec occurCheck (v: char) (tau: typExp) : bool = failwith "Error - not implemented"
+
+(* substitute typExp tau1 for all occurrences of type variable v in typExp tau2 *)
+let rec substitute (tau1 : typExp) (v : char) (tau2 : typExp) : typExp =
+  failwith "Error - not implemented"
+
+let applySubst (sigma: substitution) (tau: typExp) : typExp =
+  failwith "Error - not implemented" 
+(* This is a one-line program *)
+
+
+
+let rec unify (tau1: typExp) (tau2:typExp) : substitution =
+    failwith "Error - not implemented" 
+(* Use the following signals if unification is not possible:
+
+ failwith "Clash in principal type constructor"
+ failwith "Failed occurs check"
+ failwith "Not unifiable"
+
+*)
+
+
+(*
+
+> let te4 = Prod(TypInt, Arrow(TypVar 'c', TypVar 'a'));;
+
+val te4 : typExp = Prod (TypInt,Arrow (TypVar 'c',TypVar 'a'))
+
+> let te3 = Prod (TypVar 'a',Arrow (TypVar 'b',TypVar 'c'));;
+
+val te3 : typExp = Prod (TypVar 'a',Arrow (TypVar 'b',TypVar 'c'))
+
+> unify te3 te4;;
+val it : substitution = [('c', TypInt); ('b', TypVar 'c'); ('a', TypInt)]
+> let result = it;;
+
+val result : substitution = [('c', TypInt); ('b', TypVar 'c'); ('a', TypInt)]
+
+> applySubst result te3;;
+val it : typExp = Prod (TypInt,Arrow (TypInt,TypInt))
+> applySubst result te4;;
+val it : typExp = Prod (TypInt,Arrow (TypInt,TypInt))
+
+*)
+
+
+    
+
+    
+(*
+
+> let te4 = Prod(TypInt, Arrow(TypVar 'c', TypVar 'a'));;
+
+val te4 : typExp = Prod (TypInt,Arrow (TypVar 'c',TypVar 'a'))
+
+> let te3 = Prod (TypVar 'a',Arrow (TypVar 'b',TypVar 'c'));;
+
+val te3 : typExp = Prod (TypVar 'a',Arrow (TypVar 'b',TypVar 'c'))
+
+> unify te3 te4;;
+val it : substitution = [('c', TypInt); ('b', TypVar 'c'); ('a', TypInt)]
+> let result = it;;
+
+val result : substitution = [('c', TypInt); ('b', TypVar 'c'); ('a', TypInt)]
+
+> applySubst result te3;;
+val it : typExp = Prod (TypInt,Arrow (TypInt,TypInt))
+> applySubst result te4;;
+val it : typExp = Prod (TypInt,Arrow (TypInt,TypInt))
+
+*)
+
+
+  

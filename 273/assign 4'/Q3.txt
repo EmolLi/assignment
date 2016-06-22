@@ -1,0 +1,13 @@
+a) For both Recursive solution and Iterative solution, the hit rates are very high (99%-100%). But we can still see that hit rates in both solutions increase as the block size increses given the size of the cache is fixed. They are consistent with my expectations. Because bigger block size reduces the number of compulsory misses (miss because we want to access a block that we have never accessed before), also it takes advantage of spatial locality (data elements within relatively close storage locations).
+  Also, given the same block size and block number, the cache hit rates  for solution in Q2 (the iterative one) is higher than that for solution in Q1 (the recursive one).(Miss counts in Q2 in most less than 10, but miss counts in Q1 can be 22. I think this is because that in recursive solution, whenever we call the recursive function, we have to store the return address and then load the return address, but we don't need to do this in iterative method.
+
+DATA:
+Recursive: g(number of blocks,block size) = (cache hit rate, cache miss count)
+g(128,2)=(98%,22) g(64,4)=(99%,12) g(32,8)=(99%,7) g(16,16)=(100%,4) g(8,32)=(100%,2)
+Iterative: f(number of blocks,block size) = (cache hit rate, cache miss count)
+f(128,2)=(99%,13) f(64,4)=(99%,7) f(32,8)=(100%,5) f(16,16)=(100%,3) f(8,32)=(100%,2)
+
+b) The total number of instructions for the recursive version (6500) is smaller than that of the iterative version (6599). 
+Consistent with my expection, recursive version has bigger Memory instruction number (623 vs 607), because it needs to store and load return address of findRoot.
+However, the recursive version has almost the same ALU intruction number (1374 vs 1371), smaller Jump instruction number (961 vs 982), smaller Branch instruction number (623 vs 705), smaller other instuction number (2867 vs 2934)
+The roots the two version return are not exactly the same (though both true and within precision, like if the root is -1, then one returns -0.99999, one returns -1.00001), because I don't use exactly the same method in calucating the value of b and updating it.

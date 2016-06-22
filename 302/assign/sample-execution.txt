@@ -1,0 +1,168 @@
+
+F# Interactive for F# 3.1 (Open Source Edition)
+Freely distributed under the Apache 2.0 Open Source License
+
+For help type #help;;
+
+Question 1.
+
+val deriv : f:(float -> float) * dx:float -> x:float -> float
+
+> 
+val newton : f:(float -> float) * guess:float * tol:float * dx:float -> float
+
+> > 
+val make_cubic : a:float * b:float * c:float -> x:float -> float
+> val it : float = -3.079599812
+
+The sine function has many roots so which one it finds depends on where
+your first guess is.
+
+> newton(sin,2.0,0.0001, 0.0001);;
+val it : float = 3.141592654
+> newton(cos,2.0,0.0001,0.0001);;
+val it : float = 1.570803976
+
+Question 2.
+
+type term = float * int
+type poly = term list
+exception EmptyList
+val mtp : t:term * p:poly -> poly
+> let p1:poly = [(3.0,5);(2.0,2);(7.0,1);(1.5,0)];;
+val p1 : poly = [(3.0, 5); (2.0, 2); (7.0, 1); (1.5, 0)]
+> let t1:term = (1.5,2);;
+val t1 : term = (1.5, 2)
+> mtp(t1,p1);;
+val it : poly = [(4.5, 7); (3.0, 4); (10.5, 3); (2.25, 2)]
+> let p2 = mtp(t1,p1);;
+val p2 : poly = [(4.5, 7); (3.0, 4); (10.5, 3); (2.25, 2)]
+> let p3 = atp(t1,p2);;
+val atp : t:term * p:poly -> poly
+> let p3 = atp(t1,p2);;
+val p3 : poly = [(4.5, 7); (3.0, 4); (10.5, 3); (3.75, 2)]
+val addpolys : p1:poly * p2:poly -> poly
+val multpolys : p1:poly * p2:poly -> poly
+> let p4 = addpolys(p2,p1);;
+val p4 : poly =
+  [(4.5, 7); (3.0, 5); (3.0, 4); (10.5, 3); (4.25, 2); (7.0, 1); (1.5, 0)]
+> let p5 = multpolys(p1,p4);;
+val p5 : poly =
+  [(13.5, 12); (9.0, 10); (18.0, 9); (63.0, 8); (25.5, 7); (48.0, 6);
+   (51.0, 5); (86.5, 4); (59.5, 3); (58.375, 2); (21.0, 1); (2.25, 0)]
+> let p6 = multpolys(p1,p2);;
+val p6 : poly =
+  [(13.5, 12); (18.0, 9); (63.0, 8); (13.5, 7); (6.0, 6); (42.0, 5); (82.5, 4);
+   (31.5, 3); (3.375, 2)]
+> 
+val exp : b:float * e:int -> float
+val evalterm : v:float -> float * int -> float
+val evalpoly : p:poly * v:float -> float
+val diff : p:poly -> poly
+> exp(2.0,5);;
+val it : float = 32.0
+> exp(2,5);;
+
+Be careful with the types!!  Look carefully at the type for evalterm.  I
+have done it this way because then it plays well with List.fold for the
+next question.
+
+This expression was expected to have type
+    float    
+but here has type
+    int    
+> let t2 = (7.0,3);;
+
+val t2 : float * int = (7.0, 3)
+
+> evalterm(t2,1.5);;
+
+Read the types carefully!  This one is also wrong.
+This expression was expected to have type
+    float    
+but here has type
+    'a * 'b    
+> evalterm(1.5,t2);;
+
+This expression was expected to have type
+    float    
+but here has type
+    'a * 'b
+
+Finally it is called correctly!!  Note, there are no parens here.
+> evalterm 1.5 t2;;
+val it : float = 23.625
+> evalpoly(p1,1.0);;
+val it : float = 13.5
+> diff p2;;
+val it : poly = [(31.5, 6); (12.0, 3); (31.5, 2); (4.5, 1)]
+
+Question 3.
+
+type Country = string
+type Chart = Set<Country * Country>
+type Colour = Set<Country>
+type Colouring = Set<Colour>
+val areNeighbours :
+  ct1:'a -> ct2:'a -> chart:Set<'a * 'a> -> bool when 'a : comparison
+val canBeExtBy :
+  col:Set<'a> -> ct:'a -> chart:Set<'a * 'a> -> bool when 'a : comparison
+val extColouring :
+  chart:Chart -> colours:Colouring -> country:Country -> Set<Set<Country>>
+val countriesInChart : chart:Chart -> Set<Country>
+val colourTheCountries : chart:Chart -> Colouring
+> > let myWorld:Chart = Set.ofList [("Andorra","Benin");("Andorra","Canada");("Andorra","Denmark");("Benin","Canada"); ("Benin","Denmark");("Canada","Denmark");("Estonia","Canada");("Estonia","Denmark");("Estonia","Finland");("Finland","Greece");("Finland","Benin");("Greece","Benin");("Greece","Denmark");("Greece","Estonia")];;
+
+val myWorld : Chart =
+  set
+    [("Andorra", "Benin"); ("Andorra", "Canada"); ("Andorra", "Denmark");
+     ("Benin", "Canada"); ("Benin", "Denmark"); ("Canada", "Denmark");
+     ("Estonia", "Canada"); ("Estonia", "Denmark"); ("Estonia", "Finland");
+     ...]
+
+> colourTheCountries myWorld;;
+val it : Colouring =
+  set
+    [set ["Andorra"; "Estonia"]; set ["Benin"]; set ["Canada"; "Finland"];
+     set ["Denmark"]; set ["Greece"]]
+
+This is not the optimal colouring.  I don't care if your colouring is
+optimal.
+
+Question 4.
+type Exptree =
+  | Const of int
+  | Var of string
+  | Add of Exptree * Exptree
+  | Mul of Exptree * Exptree
+type Bindings = (string * int) list
+val lookup : name:string * env:Bindings -> int option
+val insert : name:string * value:int * b:Bindings -> (string * int) list
+val eval : exp:Exptree * env:Bindings -> int option
+
+> let env:Bindings = [("a",3);("b",4);("c",5)];;
+val env : Bindings = [("a", 3); ("b", 4); ("c", 5)]
+val exp1 : Exptree = Add (Const 3,Const 4)
+val exp2 : Exptree = Add (Const 3,Var "b")
+val exp3 : Exptree = Add (Var "c",Var "b")
+val exp4 : Exptree = Mul (Add (Var "c",Var "b"),Add (Const 3,Var "b"))
+val exp5 : Exptree = Add (Var "d",Add (Var "c",Var "b"))
+val env2 : (string * int) list = [("a", 3); ("b", 10); ("b", 4); ("c", 5)]
+
+> eval(exp1,env);;
+val it : int option = Some 7
+> eval(exp2,env);;
+val it : int option = Some 7
+> eval(exp3,env);;
+val it : int option = Some 9
+> eval(exp4,env);;
+val it : int option = Some 63
+> eval(exp5,env);;
+val it : int option = None
+> eval(exp3,env2);;
+val it : int option = Some 15
+> #quit;;
+
+- Exit...
+
+Process inferior-fsharp finished

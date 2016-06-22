@@ -1,0 +1,2673 @@
+<!DOCTYPE html>
+    <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+    <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+    <!--[if IE 8]>    <html class="no-js lt-ie9"> <![endif]-->
+    <!--[if gt IE 8]> <html class="no-js"> <![endif]-->
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>McGill School Of Computer Science</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+        <link rel="shortcut icon" type="image/gif" href="/static/img/favicon.ico"/>
+
+        
+        <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+        <link href="/static/bootstrap3_datetime/css/bootstrap-datetimepicker.min.css" type="text/css" media="all"
+              rel="stylesheet"/>
+        <link rel="stylesheet" href="/static/css/MyFontsWebfontsKit.css">
+        <link rel="stylesheet" href="/static/fontawesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/static/css/main.css">
+
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="/static/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script type="text/javascript" src="/static/bootstrap3_datetime/js/moment.min.js"></script>
+        <script type="text/javascript" src="/static/bootstrap3_datetime/js/bootstrap-datetimepicker.min.js"></script>
+        <script src="https://tinymce.cachefly.net/4.1/tinymce.min.js"></script>
+        <script src="/static/js/main.js"></script>
+        <script>tinymce_init()</script>
+        <!--  -->
+        <!--[if gte IE 9]>
+              <style type="text/css">
+                .gradient {
+                   filter: none;
+                }
+              </style>
+            <![endif]-->
+        <!--[if lt IE 8]>
+            <style>
+            .ch-info div { position: absolute; top:50%;}
+            .ch-info div p {position: relative; top: -50%}
+            </style>
+            <![endif]–-> -->
+    </head>
+    <body>
+
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        
+    <!--suppress ALL -->
+        <div id="top-red-bar" style="height: 5px; background-color: #92392e;"></div>
+	    <div class="header">
+		<div id="topMenu" class="container" style="padding-right:15px;">
+		    <div class="hidden-xs hidden-sm" style="float:right;padding-right:25px;padding-top:20px">
+			<form class="form-inline" role="form" action="/search/">
+			    <div class="form-group">
+				<input id="search_cs" class="form-control search_box" placeholder="Search" name="q"
+				       value="">
+			    </div>
+			    <button type="submit" class="btn btn-default search_button"><span class="glyphicon glyphicon-search"
+											      style="color:#444"></span>
+			    </button>
+			</form>
+		    </div>
+
+		    <div class="visible-xs visible-sm mobile_search" align="center">
+			<form class="" role="form" action="/search/">
+			    <input class="form-control search_box" style="float: left;"
+				   placeholder="Search" name="q" value="">
+			    <button type="submit" class="btn btn-default search_button mobile_search_button">
+				<span class="glyphicon glyphicon-search" style="color:#444"></span>
+			    </button>
+			</form>
+		    </div>
+
+		    <div class="row">
+			<div class="col-lg-4 col-md-4 hidden-sm hidden-xs">
+			    <a href="/"><img id="cslogo" src="/static/img/logo/logo_white.png"/></a>
+			</div>
+			<div class="col-md-5 hidden-lg hidden-md" style=" text-align: center;">
+			    <a href="/"><img id="cslogo" src="/static/img/logo/logo_white.png"/></a>
+			</div>
+
+			<div class="col-lg-8 col-md-8 hidden-sm hidden-xs"
+			     style="padding-right:0;padding-left:0;padding-top:0px;padding-bottom:15px;min-width:600px">
+			    <div style="float:right">
+				<ul class="nav nav-pills pull-right mainMenu">
+				    <li class="dropdown">
+					
+					    <a href="/prospective/whyCS">Prospective</a>
+					
+					<ul class="dropdown-menu" id="prospectiveMenu">
+					    <li><a href="/prospective/aboutMcGill">General Info</a></li>
+					    <li><a href="/prospective/whyCS">Why CS?</a></li>
+					    <li><a href="/prospective/cegep">CEGEP</a></li>
+					    <li><a href="/prospective/freshman">Freshman</a></li>
+					    <li><a href="/prospective/choosing-a-major">Choosing a Major</a></li>
+					    <li><a href="/prospective/transfer">Transfer</a></li>
+					    <li><a href="/prospective/internship">Internship</a></li>
+					    <li role="presentation" class="divider"></li>
+					    <li role="presentation" class="dropdown-header">Admission</li>
+					    <li><a href="/prospective/applying">Undergraduate</a></li>
+					    <li><a href="/academic/graduate/admission">Graduate</a></li>
+					</ul>
+				    </li>
+				    <li class="dropdown">
+					
+					    <a href="/academic/undergrad/program">Academic</a>
+					
+					<ul class="dropdown-menu" id="academicMenu">
+					    <li><a href="/academic/undergrad/program">Undergraduate</a></li>
+					    <li><a href="/academic/graduate/overview">Graduate</a></li>
+					    <li><a href="/academic/courses">Courses</a></li>
+					    <li><a href="/academic/funding/overview">Funding</a></li>
+					</ul>
+				    </li>
+				    <li class="dropdown">
+					
+					    <a href="/research/areas">Research</a>
+					
+					<ul class="dropdown-menu" id="researchMenu">
+					    <li><a href="/research/areas">Areas</a></li>
+					    <li><a href="/research/labs">Labs</a></li>
+					    <li><a href="/research/tech_reports/">Tech Reports</a></li>
+					    <li><a href="/research/publications/">Publications</a></li>
+					</ul>
+				    </li>
+				    <li class="dropdown">
+					
+					    <a href="/people/faculty">People</a>
+					
+					<ul class="dropdown-menu" id="peopleMenu">
+					    <li><a href="/people/faculty">Faculty</a></li>
+					    <li><a href="/people/staff">Staff</a></li>
+					    <li><a href="/people/community">Community</a></li>
+					</ul>
+				    </li>
+				    <li class="dropdown">
+					
+					    <a href="/news">News</a>
+					
+					<ul class="dropdown-menu" id="announcementsMenu">
+					    <li><a href="/news/academic_position">Academic Positions</a></li>
+					    <li><a href="/news/achievements">Achievements</a></li>
+					    <li role="presentation" class="divider"></li>
+					    <li role="presentation" class="dropdown-header">Events</li>
+					    <li><a href="/news/colloquium">Colloquia</a></li>
+					    <li><a href="/news/seminar">Seminars</a></li>
+					    <li role="presentation" class="divider"></li>
+					    <li role="presentation" class="dropdown-header">Notices</li>
+					    <li><a href="/news/alert">Alerts</a></li>
+					    <li><a href="/news/job_posting">Job Postings</a></li>
+					    <li><a href="/news/research_posting">Research Postings</a></li>
+					</ul>
+				    </li>
+				    <li class="dropdown">
+					
+					    <a href="/about/contacts">About</a>
+					
+					<ul class="dropdown-menu pull-right-menu" id="contactsMenu">
+
+					    <li><a href="/about/contacts">Contacts</a></li>
+					    <li><a href="/about/facilities">Facilities</a></li>
+					    <li><a href="/about/hiring">Academic Positions</a></li>
+					    <li role="presentation" class="divider"></li>
+					    <li role="presentation" class="dropdown-header">Quick Links</li>
+					    <li><a href="/forms/visitor">Visitor Form</a></li>
+					    <li><a href="http://reservations.cs.mcgill.ca/" target="_blank">Room Reservation</a>
+					    </li>
+					    <li><a href="http://mail.cs.mcgill.ca/" target="_blank">Webmail</a></li>
+					    <li><a href="http://old.cs.mcgill.ca/" target="_blank">Old Website</a></li>
+					    <li role="presentation" class="divider"></li>
+					    <li role="presentation" class="dropdown-header">Add Content</li>
+					    <li><a href="/forms">Internal</a></li>
+					    <li role="presentation" class="divider"></li>
+					    <li role="presentation" class="dropdown-header">Docs</li>
+					    <li><a href="http://old.cs.mcgill.ca/internal/bulletin-board/index" target="_blank">Admin
+						Info</a></li>
+					    <li><a href="/docs">Tech Support</a></li>
+					</ul>
+				    </li>
+				</ul>
+			    </div>
+			</div>
+
+			<div class="hidden-md hidden-lg visible-sm hidden-xs"
+			     style="margin:0 auto; padding:0;padding-left:13px;width:600px;">
+			    <!-- <div class="hidden-md hidden-lg hidden-sm hidden-xs" style="margin:0 auto; padding:0;padding-left:13px;width:600px;"> -->
+			    <ul class="nav nav-pills n2 mainMenu" style="margin:10px 0;">
+				<li class="dropdown">
+				    
+					<a href="/prospective/whyCS">Prospective</a>
+				    
+				    <ul class="dropdown-menu" id="prospectiveMenu">
+					<li><a href="/prospective/aboutMcGill">General Info</a></li>
+					<li><a href="/prospective/whyCS">Why CS?</a></li>
+					<li><a href="/prospective/cegep">CEGEP</a></li>
+					<li><a href="/prospective/freshman">Freshman</a></li>
+					<li><a href="/prospective/choosing-a-major">Choosing a Major</a></li>
+					<li><a href="/prospective/transfer">Transfer</a></li>
+					<li><a href="/prospective/internship">Internship</a></li>
+					<li role="presentation" class="divider"></li>
+					<li role="presentation" class="dropdown-header">Admission</li>
+					<li><a href="/prospective/applying">Undergraduate</a></li>
+					<li><a href="/academic/graduate/admission">Graduate</a></li>
+				    </ul>
+				</li>
+				<li class="dropdown">
+				    
+					<a href="/academic/undergrad/program">Academic</a>
+				    
+				    <ul class="dropdown-menu" id="academicMenu">
+					<li><a href="/academic/undergrad/program">Undergraduate</a></li>
+					<li><a href="/academic/graduate/overview">Graduate</a></li>
+					<li><a href="/academic/courses">Courses</a></li>
+					<li><a href="/academic/funding/overview">Funding</a></li>
+				    </ul>
+				</li>
+				<li class="dropdown">
+				    
+					<a href="/research/areas">Research</a>
+				    
+				    <ul class="dropdown-menu" id="researchMenu">
+					<li><a href="/research/areas">Areas</a></li>
+					<li><a href="/research/labs">Labs</a></li>
+					<li><a href="/research/tech_reports/">Tech Reports</a></li>
+					<li><a href="/research/publications/">Publications</a></li>
+				    </ul>
+				</li>
+				<li class="dropdown">
+				    
+					<a href="/people/faculty">People</a>
+				    
+				    <ul class="dropdown-menu" id="peopleMenu">
+					<li><a href="/people/faculty">Faculty</a></li>
+					<li><a href="/people/staff">Staff</a></li>
+					<li><a href="/people/community">Community</a></li>
+				    </ul>
+				</li>
+				<li class="dropdown">
+				    
+					<a href="/news">News</a>
+				    
+				    <ul class="dropdown-menu" id="announcementsMenu">
+					<li><a href="/news/academic_position">Academic Positions</a></li>
+					<li><a href="/news/achievements">Achievements</a></li>
+					<li role="presentation" class="divider"></li>
+					<li role="presentation" class="dropdown-header">Events</li>
+					<li><a href="/news/colloquium">Colloquia</a></li>
+					<li><a href="/news/seminar">Seminars</a></li>
+					<li role="presentation" class="divider"></li>
+					<li role="presentation" class="dropdown-header">Notices</li>
+					<li><a href="/news/alert">Alerts</a></li>
+					<li><a href="/news/job_posting">Job Postings</a></li>
+					<li><a href="/news/research_posting">Research Postings</a></li>
+				    </ul>
+				</li>
+				<li class="dropdown">
+				    
+					<a href="/about/contacts">About</a>
+				    
+				    <ul class="dropdown-menu pull-right-menu" id="contactsMenu">
+
+					<li><a href="/about/contacts">Contacts</a></li>
+					<li><a href="/about/facilities">Facilities</a></li>
+					<li><a href="/about/hiring">Academic Positions</a></li>
+					<li role="presentation" class="divider"></li>
+					<li role="presentation" class="dropdown-header">Quick Links</li>
+					<li><a href="/forms/visitor">Visitor Form</a></li>
+					<li><a href="http://reservations.cs.mcgill.ca/" target="_blank">Room Reservation</a>
+					</li>
+					<li><a href="http://mail.cs.mcgill.ca/" target="_blank">Webmail</a></li>
+					<li><a href="http://old.cs.mcgill.ca/" target="_blank">Old Website</a></li>
+					<li role="presentation" class="divider"></li>
+					<li role="presentation" class="dropdown-header">Add Content</li>
+					<li><a href="/forms">Internal</a></li>
+					<li role="presentation" class="divider"></li>
+					<li role="presentation" class="dropdown-header">Docs</li>
+					<li><a href="http://old.cs.mcgill.ca/internal/bulletin-board/index" target="_blank">Admin
+					    Info</a></li>
+					<li><a href="/docs">Tech Support</a>
+					</li>
+				    </ul>
+				</li>
+			    </ul>
+			</div>
+
+			<div id="smalltopnav" class="col-sm-12 col-sx-12 visible-xs" style="margin:0 auto; text-align: center;">
+			    <ul class="nav nav-tabs mainMenu mobileMenu" style="margin:10px 0;">
+				<li>
+				    <a href="/prospective/aboutMcGill">
+					<button type="button" class="btn btn-primary navthumb"><span
+						class="glyphicon glyphicon glyphicon-road"></span>Prospective
+					</button>
+				    </a>
+				</li>
+
+				<li>
+				    <a href="/academic/undergrad/program">
+					<button type="button" class="btn btn-primary navthumb"><span
+						class="glyphicon glyphicon-book"></span>Academic
+					</button>
+				    </a>
+				</li>
+				<li>
+				    <a href="/research/areas">
+					<button type="button" class="btn btn-primary navthumb"><span
+						class="glyphicon glyphicon-briefcase"></span>Research
+					</button>
+				    </a>
+				</li>
+				<li>
+				    <a href="/people/faculty">
+					<button type="button" class="btn btn-primary navthumb"><span
+						class="glyphicon glyphicon-user"></span>People
+					</button>
+				    </a>
+				</li>
+				<li>
+				    <a href="/news">
+					<button type="button" class="btn btn-primary navthumb"><span
+						class="glyphicon glyphicon-bullhorn"></span>News
+					</button>
+				    </a>
+				</li>
+				<li>
+				    <a href="/about/contacts">
+					<button type="button" class="btn btn-primary navthumb"><span
+						class="glyphicon glyphicon-link"></span>About
+					</button>
+				    </a>
+				</li>
+			    </ul>
+			</div>
+
+		    </div>
+		</div>
+	    </div>
+        <div id="content-container" class="light" style="border-top:0px solid white;">
+            <div class="container">
+                
+    </div>
+    <script src="/static/js/index.js"></script>
+    <!-- HELLO -->
+    <!--
+    <div class="container" style="margin-top: 5px; margin-bottom: 2px;">
+       <div class="section radius-top radius-bottom" style="padding: 10px; background-color: #FFF;">
+          <p class="news_title">The McGill School of Computer Science is one of the leading teaching and research centers for computer science in Canada.
+        We offer a diverse array of programs in both <a href="">Computer Science</a> and <a href="">Software Engineering</a>.
+            For more information about our programs, internships and great job prospects see our <a href="">prospective students web page</a>.
+          </p>
+       </div>
+    </div>
+    -->
+    <div class="container" style="padding:0;margin:0px auto; margin-top: 25px;">
+    <div class="row indexRow">
+    <div id="leftBox" class="indexResearch col-md-8 col-lg-7 radius-top radius-bottom"
+         style="padding:2px;margin:0 0px 0 0;">
+    <div class="red-underline banner-research radius-top">
+        <div id="leftBoxTitle" class="banner-title radius-top-left red-underline"><h4 class="news"><a
+                href="/research/areas"><span>research</span>@cs</a></h4></div>
+        <div class="left-triangle"></div>
+    </div>
+    <div id="leftBoxWhite" class="row radius-bottom"
+         style="background-color:#fff; margin:0px 0px 0 0px; min-height: 520px;">
+        <div id="leftBoxContent">
+            <div id="carousel-slideshow" class="carousel slide" data-ride="carousel" data-interval="20000">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    
+                        <li data-target="#carousel-slideshow" data-slide-to="0"
+                            
+                            style="background:#f9cd99"
+                            ></li>
+                    
+                        <li data-target="#carousel-slideshow" data-slide-to="1"
+                            
+                            style="background:#cbe8ee"></li>
+                    
+                        <li data-target="#carousel-slideshow" data-slide-to="2"
+                            
+                            style="background:#cbe8ee"></li>
+                    
+                        <li data-target="#carousel-slideshow" data-slide-to="3"
+                            
+                            style="background:#cbe8ee"></li>
+                    
+                        <li data-target="#carousel-slideshow" data-slide-to="4"
+                            
+                            style="background:#cbe8ee"></li>
+                    
+                        <li data-target="#carousel-slideshow" data-slide-to="5"
+                            
+                            style="background:#cbe8ee"></li>
+                    
+                        <li data-target="#carousel-slideshow" data-slide-to="6"
+                            
+                            style="background:#cbe8ee"></li>
+                    
+                        <li data-target="#carousel-slideshow" data-slide-to="7"
+                            
+                            style="background:#cbe8ee"></li>
+                    
+                        <li data-target="#carousel-slideshow" data-slide-to="8"
+                            
+                            style="background:#cbe8ee"></li>
+                    
+                        <li data-target="#carousel-slideshow" data-slide-to="9"
+                            
+                            style="background:#cbe8ee"></li>
+                    
+                        <li data-target="#carousel-slideshow" data-slide-to="10"
+                            class="active"
+                            style="background:#cbe8ee"></li>
+                    
+                        <li data-target="#carousel-slideshow" data-slide-to="11"
+                            
+                            style="background:#cbe8ee"></li>
+                    
+                        <li data-target="#carousel-slideshow" data-slide-to="12"
+                            
+                            style="background:#cbe8ee"></li>
+                    
+                        <li data-target="#carousel-slideshow" data-slide-to="13"
+                            
+                            style="background:#cbe8ee"></li>
+                    
+                        <li data-target="#carousel-slideshow" data-slide-to="14"
+                            
+                            style="background:#cbe8ee"></li>
+                    
+                        <li data-target="#carousel-slideshow" data-slide-to="15"
+                            
+                            style="background:#cbe8ee"></li>
+                    
+                        <li data-target="#carousel-slideshow" data-slide-to="16"
+                            
+                            style="background:#cbe8ee"></li>
+                    
+                        <li data-target="#carousel-slideshow" data-slide-to="17"
+                            
+                            style="background:#cbe8ee"></li>
+                    
+                        <li data-target="#carousel-slideshow" data-slide-to="18"
+                            
+                            style="background:#cbe8ee"></li>
+                    
+                        <li data-target="#carousel-slideshow" data-slide-to="19"
+                            
+                            style="background:#cbe8ee"></li>
+                    
+                        <li data-target="#carousel-slideshow" data-slide-to="20"
+                            
+                            style="background:#cbe8ee"></li>
+                    
+                        <li data-target="#carousel-slideshow" data-slide-to="21"
+                            
+                            style="background:#cbe8ee"></li>
+                    
+                        <li data-target="#carousel-slideshow" data-slide-to="22"
+                            
+                            style="background:#cbe8ee"></li>
+                    
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <!-- announcement slides -->
+                    
+                        <div class="item index_announcement_slide ">
+                         <!-- Background image -->
+
+                            <div class="index_slide_bg" style="background-image: url('http://media-01.cs.mcgill.ca/images/events/academic.jpg')" >
+                            <div class="gradient-right"></div>
+                            <div class="gradient-left"></div>
+                            
+                                <div class="index_slide_bg_caption_top">
+                            
+                        
+                        <p><p>&nbsp;</p>
+<p><img style="float: right;" src="http://cs.mcgill.ca/static/img/profpic/meger.jpg" alt="" width="200" height="200" /></p>
+<h1>New faculty member&nbsp;</h1>
+<p>The School of Computer Science welcomes new faculty member, David Meger.&nbsp;</p>
+<p>Professor Meger's research interests are computer vision, machine learning, and robotics.&nbsp; Visit his website to learn more: <a href="http://www.cim.mcgill.ca/~dmeger" target="_blank">http://www.cim.mcgill.ca/~dmeger</a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p></p>
+                        </div>
+
+                        </div>
+                        
+                    </div>
+                    
+                    <!-- research slides -->
+                    
+                        <div class="item index_research_slide ">
+
+                            <div class="index_research_mobile"><!--mobile version of research slides-->
+
+
+                            </div>
+                            <div class="index_research_desktop"><!--desktop version of research slides-->
+                                <h1>Computer Games Lab</h1>
+
+                                <h2>efficient and playable game implementations / Modelling and analyzing different facts of game structure</h2>
+
+                                <div class="tabs">
+                                    <div class="tab">
+                                        <input type="radio" id="tab-1_1"
+                                               name="tab-group-1_1" checked>
+                                        <label class="radioLabel" for="tab-1_1">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>HALO STATECHARTS</b><br><em>Statechart-based game AI</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide1 ch-item"
+                                                 style="background-image:url('/static/slides/computergames/computergames1.png');">
+                                                <div class="ch-info"><span>
+														<div>Designing and modelling an agent comparable in size and complexity to a commercial AI using to formalism of layered statecharts. As a reference point, looked at the behaviour tree of Halo and reconstructed it using the new approach.</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="radio" id="tab-2_1"
+                                               name="tab-group-1_1">
+                                        <label class="radioLabel" for="tab-2_1">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>NARRATIVES</b><br><em>Computer game narratives</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide2 ch-item"
+                                                 style="background-image:url('/static/slides/computergames/computergames2.png');">
+                                                <div class="ch-info"><span><div>
+                                                    Aims to model computer narratives and develop analysis techniques for detecting narrative flaws and other narrative properties, currently built around an investigation of Interactive Fiction as a relatively pure source of game narratives.
+</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="radio" id="tab-3_1"
+                                               name="tab-group-1_1">
+                                        <label class="radioLabel" for="tab-3_1">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>GAMEPLAY PACING</b><br><em>Measuring gameplay pacing in WoW</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide3 ch-item"
+                                                 style="background-image:url('/static/slides/computergames/computergames3.png');">
+                                                <div class="ch-info"><span><div>
+                                                    Using a World of Warcraft client-side plugin created to record data about players&#39; progress through a cooperative scenario and analyzing the data, the level of difficulty can be quantified in order to design scalable and adaptable scenarios to challenge players.
+</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                        <p class="pull-right" style="padding: 10px 10px 0 0">Professors
+                                            
+                                                <a href="http://www.cs.mcgill.ca/~kemme/" target="_blank">Bettina Kemme</a>
+                                                , 
+                                            
+                                                <a href="http://www.cs.mcgill.ca/~joerg/Home/Jorgs_Home.html" target="_blank">Jörg Kienzle</a>
+                                                , 
+                                            
+                                                <a href="http://www.sable.mcgill.ca/~clump/" target="_blank">Clark Verbrugge</a>
+                                                
+                                            
+                                        </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--end of desktop version of research slides-->
+                    
+                        <div class="item index_research_slide ">
+
+                            <div class="index_research_mobile"><!--mobile version of research slides-->
+
+
+                            </div>
+                            <div class="index_research_desktop"><!--desktop version of research slides-->
+                                <h1>Network Dynamics Lab</h1>
+
+                                <h2>Measuring and predicting complex systems</h2>
+
+                                <div class="tabs">
+                                    <div class="tab">
+                                        <input type="radio" id="tab-1_2"
+                                               name="tab-group-1_2" checked>
+                                        <label class="radioLabel" for="tab-1_2">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>WHO&#39;S IN A POPULATION?</b><br><em>Demographic Inference</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide1 ch-item"
+                                                 style="background-image:url('/static/slides/ruths/ruths1.png');">
+                                                <div class="ch-info"><span>
+														<div>Organizations, governments, and companies are interested in understanding the people in groups they’re interacting with. We&#39;re developing new techniques for inferring the demographics of physical populations using data from online networks like Twitter and Facebook.
+</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="radio" id="tab-2_2"
+                                               name="tab-group-1_2">
+                                        <label class="radioLabel" for="tab-2_2">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>HOW DO SOCIAL NETWORKS GROW?</b><br><em>Community Identification</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide2 ch-item"
+                                                 style="background-image:url('/static/slides/ruths/ruths2.png');">
+                                                <div class="ch-info"><span><div>
+                                                    Grow, decay, and dissipate. We&#39;re interested in observing and measuring these processes using computational and mathematical models. We hope that such knowledge aids in building more vibrant, constructive societies.
+</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="radio" id="tab-3_2"
+                                               name="tab-group-1_2">
+                                        <label class="radioLabel" for="tab-3_2">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>WHY ARE ORGANICS HARD TO KILL?</b><br><em>Origin of Biological Robustness</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide3 ch-item"
+                                                 style="background-image:url('/static/slides/ruths/ruths3.png');">
+                                                <div class="ch-info"><span><div>
+                                                    Despite the complex biochemical processes at work in cells, you can mess with a cell&#39;s DNA, douse it in toxins, and expose it to extreme temperatures and it will survive. We&#39;re working to uncover aspects of cellular design that evolution has used to make living systems so resilient.
+</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                        <p class="pull-right" style="padding: 10px 10px 0 0">Professor
+                                            
+                                                <a href="http://www.ruthsresearch.org/" target="_blank">Derek Ruths</a>
+                                                
+                                            
+                                        </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--end of desktop version of research slides-->
+                    
+                        <div class="item index_research_slide ">
+
+                            <div class="index_research_mobile"><!--mobile version of research slides-->
+
+
+                            </div>
+                            <div class="index_research_desktop"><!--desktop version of research slides-->
+                                <h1>Distributed Simulation Lab</h1>
+
+                                <h2>Synchronization techniques / Load-balancing algorithms / VLSI simulation / Astrophysics simulation</h2>
+
+                                <div class="tabs">
+                                    <div class="tab">
+                                        <input type="radio" id="tab-1_3"
+                                               name="tab-group-1_3" checked>
+                                        <label class="radioLabel" for="tab-1_3">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>GATE LEVEL PARALLEL SIMULATION</b><br><em>parallel Verilog simulation</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide1 ch-item"
+                                                 style="background-image:url('/static/slides/distributedsim/distributedsim1.png');">
+                                                <div class="ch-info"><span>
+														<div>Developing a parallel environment for gate level simulation which incorporates our research on synchronization and load-balancing algorithms, with the intention to focus on the use of multi-core architectures, GPUs, and embedded circuit simulation.</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="radio" id="tab-2_3"
+                                               name="tab-group-1_3">
+                                        <label class="radioLabel" for="tab-2_3">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>GRAVITATIONAL N-BODY SIMULATION</b><br><em>n-body problem</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide2 ch-item"
+                                                 style="background-image:url('/static/slides/distributedsim/distributedsim2.png');">
+                                                <div class="ch-info"><span><div>
+                                                    Studying the motion of particles under the influence of their mutual gravitational attraction, making use of direct methods for the solution of the equations of motion and parallel discrete-event simulation instead of continuous simulation.</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="radio" id="tab-3_3"
+                                               name="tab-group-1_3">
+                                        <label class="radioLabel" for="tab-3_3">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>ASTROPHYSICS SIMULATIONS</b><br><em>astrophysical and weather</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide3 ch-item"
+                                                 style="background-image:url('/static/slides/distributedsim/distributedsim3.png');">
+                                                <div class="ch-info"><span><div>
+                                                    Integrating continuous and discrete event paradigms to provide a new and powerful approach to the simulation problems of continuous simulations such as those for astrophysics and weather, using reverse computation as a key component.</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                        <p class="pull-right" style="padding: 10px 10px 0 0">Professor
+                                            
+                                                <a href="http://www.cs.mcgill.ca/~carl/" target="_blank">Carl Tropper</a>
+                                                
+                                            
+                                        </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--end of desktop version of research slides-->
+                    
+                        <div class="item index_research_slide ">
+
+                            <div class="index_research_mobile"><!--mobile version of research slides-->
+
+
+                            </div>
+                            <div class="index_research_desktop"><!--desktop version of research slides-->
+                                <h1>Computational Structural Biology</h1>
+
+                                <h2>Theoretical models &amp; algorithms/ Genomic sequences/ Molecular systems/ Cellular functions</h2>
+
+                                <div class="tabs">
+                                    <div class="tab">
+                                        <input type="radio" id="tab-1_4"
+                                               name="tab-group-1_4" checked>
+                                        <label class="radioLabel" for="tab-1_4">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>HUMAN-COMPUTING</b><br><em>Phylo</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide1 ch-item"
+                                                 style="background-image:url('/static/slides/wald/wald1.png');">
+                                                <div class="ch-info"><span>
+														<div>Solve difficult scientific problems while playing a casual video game. We develop human-computing games such as Phylo to solve central problems arising in biology. Join the open-science movement!
+</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="radio" id="tab-2_4"
+                                               name="tab-group-1_4">
+                                        <label class="radioLabel" for="tab-2_4">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>MECHANISM OF LIFE</b><br><em>Protein Folding</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide2 ch-item"
+                                                 style="background-image:url('/static/slides/wald/wald2.png');">
+                                                <div class="ch-info"><span><div>
+                                                    Understanding how proteins fold is an important step to decipher the mechanisms of life and design pharmaceutical drug. We develop new models to make this task faster and more accurate.
+</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="radio" id="tab-3_4"
+                                               name="tab-group-1_4">
+                                        <label class="radioLabel" for="tab-3_4">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>ORIGIN OF LIFE ON EARTH</b><br><em>RNA &amp; Evolution</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide3 ch-item"
+                                                 style="background-image:url('/static/slides/wald/wald3.png');">
+                                                <div class="ch-info"><span><div>
+                                                    Ribonucleic Acids (RNAs) could be at the origin of life on earth. We develop algorithms to design synthetic biological systems and simulate molecular evolution based on RNAs.
+</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                        <p class="pull-right" style="padding: 10px 10px 0 0">Professor
+                                            
+                                                <a href="http://www.cs.mcgill.ca/~jeromew/" target="_blank">Jerome Waldispuhl</a>
+                                                
+                                            
+                                        </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--end of desktop version of research slides-->
+                    
+                        <div class="item index_research_slide ">
+
+                            <div class="index_research_mobile"><!--mobile version of research slides-->
+
+
+                            </div>
+                            <div class="index_research_desktop"><!--desktop version of research slides-->
+                                <h1>Distributed Information System Lab</h1>
+
+                                <h2>Large-scale distributed data management / Cloud computing / Data consistency</h2>
+
+                                <div class="tabs">
+                                    <div class="tab">
+                                        <input type="radio" id="tab-1_5"
+                                               name="tab-group-1_5" checked>
+                                        <label class="radioLabel" for="tab-1_5">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>LARGE-SCALE DATA STORES</b><br><em> Reliability, Consistency, Load-distribution</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide1 ch-item"
+                                                 style="background-image:url('/static/slides/distributedinfo/distributedinfo1.png');">
+                                                <div class="ch-info"><span>
+														<div>Managing consistency for transactional applications when data is distributed across many components is challenging. ConsAD detects and quantifies anomalies as they occur, and we build algorithms that maintain the desired level of consistency across all components.
+</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="radio" id="tab-2_5"
+                                               name="tab-group-1_5">
+                                        <label class="radioLabel" for="tab-2_5">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>DISTRIBUTED MULIPLAYER GAMES</b><br><em> Update dissemination, Game engines in the cloud</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide2 ch-item"
+                                                 style="background-image:url('/static/slides/distributedinfo/distributedinfo2.png');">
+                                                <div class="ch-info"><span><div>
+                                                    The goal of our research is to understand the challenges of distributing a game engine across a distributed cluster or a peer-to-peer network and to find solutions for update dissemination, load-balancing, cheating, movement prediction, and much more.</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="radio" id="tab-3_5"
+                                               name="tab-group-1_5">
+                                        <label class="radioLabel" for="tab-3_5">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>ADAPTIVE CACHING</b><br><em>Workload-aware caching and load-balancing</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide3 ch-item"
+                                                 style="background-image:url('/static/slides/distributedinfo/distributedinfo3.png');">
+                                                <div class="ch-info"><span><div>
+                                                    CumuloNimbo is a novel platform as a service (PaaS) that will provide high scalability (100+ nodes), high availability, and adaptability for traditional transactional workloads without sacrificing data consistency and ease of programming as is the norm in today&#39;s PaaS.</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                        <p class="pull-right" style="padding: 10px 10px 0 0">Professor
+                                            
+                                                <a href="http://www.cs.mcgill.ca/~kemme/" target="_blank">Bettina Kemme</a>
+                                                
+                                            
+                                        </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--end of desktop version of research slides-->
+                    
+                        <div class="item index_research_slide ">
+
+                            <div class="index_research_mobile"><!--mobile version of research slides-->
+
+
+                            </div>
+                            <div class="index_research_desktop"><!--desktop version of research slides-->
+                                <h1>Comparative and Regulatory Genomics</h1>
+
+                                <h2>Algorithmic and machine learning approaches to biological sequence analysis / Comparative genomics / Genome evolution</h2>
+
+                                <div class="tabs">
+                                    <div class="tab">
+                                        <input type="radio" id="tab-1_6"
+                                               name="tab-group-1_6" checked>
+                                        <label class="radioLabel" for="tab-1_6">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>COMPARATIVE &amp; ANCESTRAL GENOMICS</b><br><em>Functional regions of the human genome</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide1 ch-item"
+                                                 style="background-image:url('/static/slides/blanchette/blanchette1.png');">
+                                                <div class="ch-info"><span>
+														<div>Can we tell what the genome of the first mammal looked like? Yes, with a clever analysis of genomes of extant species. We use inferred ancestral genomes and evolutionary scenarios to map the functional regions of the human genome and predict the impact of mutations.</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="radio" id="tab-2_6"
+                                               name="tab-group-1_6">
+                                        <label class="radioLabel" for="tab-2_6">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>PROTEIN-PROTEIN INTERACTION NETWORKS</b><br><em>Mapping the human cell network</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide2 ch-item"
+                                                 style="background-image:url('/static/slides/blanchette/blanchette2.png');">
+                                                <div class="ch-info"><span><div>
+                                                    These interactions occur when two or more proteins bind together to carry out their biological function. In collaboration with the Coulombe Lab, we are developing the experimental and computational techniques to map this network and the graph algorithms required to analyze it.</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="radio" id="tab-3_6"
+                                               name="tab-group-1_6">
+                                        <label class="radioLabel" for="tab-3_6">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>3D GENOMICS</b><br><em>Inferring and analyzing the genome&#39;s 3D structure</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide3 ch-item"
+                                                 style="background-image:url('/static/slides/blanchette/blanchette3.png');">
+                                                <div class="ch-info"><span><div>
+                                                    Two metres of DNA fit into the nucleus of each cell. The precise way DNA is packaged is highly organized, dynamic, and has major implications on how genes are expressed. In collaboration with the Dostie Lab, we investigate experimental and computational approaches.</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                        <p class="pull-right" style="padding: 10px 10px 0 0">Professor
+                                            
+                                                <a href="http://www.cs.mcgill.ca/~blanchem/" target="_blank">Mathieu Blanchette</a>
+                                                
+                                            
+                                        </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--end of desktop version of research slides-->
+                    
+                        <div class="item index_research_slide ">
+
+                            <div class="index_research_mobile"><!--mobile version of research slides-->
+
+
+                            </div>
+                            <div class="index_research_desktop"><!--desktop version of research slides-->
+                                <h1>Pervasive Security and Privacy</h1>
+
+                                <h2>Mobile and pervasive computing / Networked embedded systems / Privacy-preserving computing / Cloud systems</h2>
+
+                                <div class="tabs">
+                                    <div class="tab">
+                                        <input type="radio" id="tab-1_7"
+                                               name="tab-group-1_7" checked>
+                                        <label class="radioLabel" for="tab-1_7">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>PRIVACY-PRESERVING SENSING AND COMPUTING</b><br><em>Important considerations</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide1 ch-item"
+                                                 style="background-image:url('/static/slides/psp/psp1.png');">
+                                                <div class="ch-info"><span>
+														<div>Design challenge for pervasive computing researchers: continuous sensing is useful, but how can we design such systems so that they use sensing when and where it is needed while respecting the privacy and comfort of users and others who may be monitored?</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="radio" id="tab-2_7"
+                                               name="tab-group-1_7">
+                                        <label class="radioLabel" for="tab-2_7">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>SIDE-CHANNEL INFORMATION LEAKS</b><br><em>Protecting WLAN users</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide2 ch-item"
+                                                 style="background-image:url('/static/slides/psp/psp2.png');">
+                                                <div class="ch-info"><span><div>
+                                                    By encrypting your wireless communications and requiring users to authenticate before connecting, you can ensure unauthorized users do not intrude on your WLAN and that your wireless data can not be intercepted.</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="radio" id="tab-3_7"
+                                               name="tab-group-1_7">
+                                        <label class="radioLabel" for="tab-3_7">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>LOCATION VERIFICATION SYSTEM</b><br><em>Location-based social network services</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide3 ch-item"
+                                                 style="background-image:url('/static/slides/psp/psp3.png');">
+                                                <div class="ch-info"><span><div>
+                                                    Location-based services (LBS) is a computer program-level services used to include controls for location and time data as control features. LBS has many uses in social networking today, through the mobile devices&#39; network accessing its geographical position.</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                        <p class="pull-right" style="padding: 10px 10px 0 0">Professor
+                                            
+                                                <a href="http://www.cs.mcgill.ca/~wenbohe/" target="_blank">Wenbo He</a>
+                                                
+                                            
+                                        </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--end of desktop version of research slides-->
+                    
+                        <div class="item index_research_slide ">
+
+                            <div class="index_research_mobile"><!--mobile version of research slides-->
+
+
+                            </div>
+                            <div class="index_research_desktop"><!--desktop version of research slides-->
+                                <h1>Reasoning and Learning Lab</h1>
+
+                                <h2>Probabilistic systems / Markov processes / Decision making under uncertainty / Reinforcement learning</h2>
+
+                                <div class="tabs">
+                                    <div class="tab">
+                                        <input type="radio" id="tab-1_8"
+                                               name="tab-group-1_8" checked>
+                                        <label class="radioLabel" for="tab-1_8">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>SMARTWHEELER</b><br><em>J. Pineau - multi-modal intelligent wheelchair control</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide1 ch-item"
+                                                 style="background-image:url('/static/slides/rl/rl1.png');">
+                                                <div class="ch-info"><span>
+														<div>Senses obstacles, uses programmed maps to localize and self-navigate through its environment, and helps individuals with mobility impairments achieve greater autonomy, who can communicate with the robot through a speech interface or touchscreen.</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="radio" id="tab-2_8"
+                                               name="tab-group-1_8">
+                                        <label class="radioLabel" for="tab-2_8">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>APPROXIMATION OF CONTINUOUS STATE SYSTEMS</b><br><em>P. Panangaden</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide2 ch-item"
+                                                 style="background-image:url('/static/slides/rl/rl2.png');">
+                                                <div class="ch-info"><span><div>
+                                                    Developing theoretical tools for analyzing continuous-state systems, using duality theory, metrics and logic. Algorithms for automatically computing approximations whose behaviour can be guaranteed to be “close” to that of the original system.</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="radio" id="tab-3_8"
+                                               name="tab-group-1_8">
+                                        <label class="radioLabel" for="tab-3_8">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>REINFORCEMENT LEARNING AND TIME SERIES ANALYSIS</b><br><em>D. Precup</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide3 ch-item"
+                                                 style="background-image:url('/static/slides/rl/rl3.png');">
+                                                <div class="ch-info"><span><div>
+                                                    Algorithms for learning good representations of time series data and how to control a stochastic, complex environment to maximize a long-term objective. Applications in medical decision making, energy management, e-commerce, music, etc.</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                        <p class="pull-right" style="padding: 10px 10px 0 0">Professors
+                                            
+                                                <a href="http://www.cs.mcgill.ca/~jcheung" target="_blank">Jackie Chi Kit Cheung</a>
+                                                , 
+                                            
+                                                <a href="http://www.cs.mcgill.ca/~prakash/" target="_blank">Prakash Panangaden</a>
+                                                , 
+                                            
+                                                <a href="http://www.cs.mcgill.ca/~jpineau/" target="_blank">Joelle Pineau</a>
+                                                , 
+                                            
+                                                <a href="http://www.cs.mcgill.ca/~dprecup/" target="_blank">Doina Precup</a>
+                                                
+                                            
+                                        </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--end of desktop version of research slides-->
+                    
+                        <div class="item index_research_slide ">
+
+                            <div class="index_research_mobile"><!--mobile version of research slides-->
+
+
+                            </div>
+                            <div class="index_research_desktop"><!--desktop version of research slides-->
+                                <h1>Modelling, Simulation &amp; Design Lab</h1>
+
+                                <h2>Computer-aided multi-paradigm modelling and simulation / Model compilers &amp; languages / Rapid application development / Reactive systems</h2>
+
+                                <div class="tabs">
+                                    <div class="tab">
+                                        <input type="radio" id="tab-1_9"
+                                               name="tab-group-1_9" checked>
+                                        <label class="radioLabel" for="tab-1_9">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>NECSIS</b><br><em>Automotive engineering network</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide1 ch-item"
+                                                 style="background-image:url('/static/slides/msdl/msdl1.png');">
+                                                <div class="ch-info"><span>
+														<div>A $16.6-million national research network created to tackle the technological challenges related to the growing complexity of automotive software systems. GM of Canada Ltd and IBM Canada are mobilizing leading software engineers at 7 universities and in Montreal.</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="radio" id="tab-2_9"
+                                               name="tab-group-1_9">
+                                        <label class="radioLabel" for="tab-2_9">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>ATOM^3</b><br><em>Tool for multi-formalism and meta-modeling</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide2 ch-item"
+                                                 style="background-image:url('/static/slides/msdl/msdl2.png');">
+                                                <div class="ch-info"><span><div>
+                                                    Meta-modelling refers to the description, or modelling, of different kinds of formalisms used to model systems. Model-transforming refers to the process of converting, translating or modifying a model in a given formalism, into another model that may be in the same formalism.</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="radio" id="tab-3_9"
+                                               name="tab-group-1_9">
+                                        <label class="radioLabel" for="tab-3_9">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>adapID</b><br><em>Advanced applications for electronic Identity cards</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide3 ch-item"
+                                                 style="background-image:url('/static/slides/msdl/msdl3.png');">
+                                                <div class="ch-info"><span><div>
+                                                    Designing secure e-ID card apps to protect citizens’ privacy with research in digital credentials, secure integration of biometry and cryptology, reliable dispute handling, trusted modules for securing applications, and services and legal aspects of trust in an open network.</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                        <p class="pull-right" style="padding: 10px 10px 0 0">Professor
+                                            
+                                                <a href="http://msdl.cs.mcgill.ca/people/hv" target="_blank">Hans Vangheluwe</a>
+                                                
+                                            
+                                        </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--end of desktop version of research slides-->
+                    
+                        <div class="item index_research_slide active">
+
+                            <div class="index_research_mobile"><!--mobile version of research slides-->
+
+
+                            </div>
+                            <div class="index_research_desktop"><!--desktop version of research slides-->
+                                <h1>Advanced Networking Research Lab</h1>
+
+                                <h2>Design of secure and trusted networked computing systems / Authentication / Access control / Cloud computing</h2>
+
+                                <div class="tabs">
+                                    <div class="tab">
+                                        <input type="radio" id="tab-1_10"
+                                               name="tab-group-1_10" checked>
+                                        <label class="radioLabel" for="tab-1_10">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>HYBRID CLOUDS</b><br><em>Leveraging public and private cloud combinations</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide1 ch-item"
+                                                 style="background-image:url('/static/slides/advancednetwork/advancednetwork1.png');">
+                                                <div class="ch-info"><span>
+														<div>A framework for combining resources from public clouds and/or resources donated by participating resources with trusted resources from private clouds to deliver higher levels of services at lower cost for resource intensive applications such as image and video processing.</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="radio" id="tab-2_10"
+                                               name="tab-group-1_10">
+                                        <label class="radioLabel" for="tab-2_10">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>GINI</b><br><em>Open-source software-based toolkit for experimental virtual networks</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide2 ch-item"
+                                                 style="background-image:url('/static/slides/advancednetwork/advancednetwork2.png');">
+                                                <div class="ch-info"><span><div>
+                                                    An entirely software-based system providing lightweight but IP compliant virtual elements for machines, routers, switches, wireless access points, and mobile devices, which can be interconnected to create virtual networks for experimentation purposes.</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="radio" id="tab-3_10"
+                                               name="tab-group-1_10">
+                                        <label class="radioLabel" for="tab-3_10">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>SOCIAL ACCESS CONTROL</b><br><em>Human-centric information access control</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide3 ch-item"
+                                                 style="background-image:url('/static/slides/advancednetwork/advancednetwork3.png');">
+                                                <div class="ch-info"><span><div>
+                                                    Include social factors in confidentiality control and integrity management decisions to create flexible schemes where policies can be expressed in terms of social linkages and risks of sharing or upfdating can be related to the interactions observed in the social network.</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                        <p class="pull-right" style="padding: 10px 10px 0 0">Professor
+                                            
+                                                <a href="http://www.cs.mcgill.ca/~maheswar/" target="_blank">Muthucumaru Maheswaran</a>
+                                                
+                                            
+                                        </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--end of desktop version of research slides-->
+                    
+                        <div class="item index_research_slide ">
+
+                            <div class="index_research_mobile"><!--mobile version of research slides-->
+
+
+                            </div>
+                            <div class="index_research_desktop"><!--desktop version of research slides-->
+                                <h1>Software Technology Research Group</h1>
+
+                                <h2>Source Code and Documentation Analysis Techniques / Specialized Search Engines and Recommendation Systems / Information Extraction and Software Analytics</h2>
+
+                                <div class="tabs">
+                                    <div class="tab">
+                                        <input type="radio" id="tab-1_11"
+                                               name="tab-group-1_11" checked>
+                                        <label class="radioLabel" for="tab-1_11">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>Recommending Adaptive Changes </b><br><em>for Documentation Evolution</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide1 ch-item"
+                                                 style="background-image:url('/static/slides/softwareevo/strg1.png');">
+                                                <div class="ch-info"><span>
+														<div>Programming technologies evolves rapidly and information about them can become outdated. We design techniques to automatically detect and repair inconsistencies.</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="radio" id="tab-2_11"
+                                               name="tab-group-1_11">
+                                        <label class="radioLabel" for="tab-2_11">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>Automatic Code Example Summarization</b><br><em></em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide2 ch-item"
+                                                 style="background-image:url('/static/slides/softwareevo/strg2.png');">
+                                                <div class="ch-info"><span><div>
+                                                    We are developing the idea of source code summarization to repackage existing open-source code fragments so that they cleanly illustrate programming concepts or patterns of interest.</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="radio" id="tab-3_11"
+                                               name="tab-group-1_11">
+                                        <label class="radioLabel" for="tab-3_11">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>TaskNav</b><br><em>Extracting Development Tasks to Navigate Software Documentation</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide3 ch-item"
+                                                 style="background-image:url('/static/slides/softwareevo/strg3.png');">
+                                                <div class="ch-info"><span><div>
+                                                    With the TaskNav project, we are exploring the use of natural language processing to re-index programming tutorials so that they map to questions programmers have.</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                        <p class="pull-right" style="padding: 10px 10px 0 0">Professor
+                                            
+                                                <a href="http://www.cs.mcgill.ca/~martin/" target="_blank">Martin Robillard</a>
+                                                
+                                            
+                                        </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--end of desktop version of research slides-->
+                    
+                        <div class="item index_research_slide ">
+
+                            <div class="index_research_mobile"><!--mobile version of research slides-->
+
+
+                            </div>
+                            <div class="index_research_desktop"><!--desktop version of research slides-->
+                                <h1>Computation and Logic Group</h1>
+
+                                <h2>Developing a theoretical and practical foundation for building and reasoning about reliable, safe software systems</h2>
+
+                                <div class="tabs">
+                                    <div class="tab">
+                                        <input type="radio" id="tab-1_12"
+                                               name="tab-group-1_12" checked>
+                                        <label class="radioLabel" for="tab-1_12">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>BELUGA</b><br><em>Programming with proofs</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide1 ch-item"
+                                                 style="background-image:url('/static/slides/computationlogic/computationlogic1.png');">
+                                                <div class="ch-info"><span>
+														<div>Beluga is a novel programming environment for trustworthy computing where programmers can specify sophisticated safety policies and weave proofs into programs. The goal is to establish safety of software systems via programming with proofs.</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="radio" id="tab-2_12"
+                                               name="tab-group-1_12">
+                                        <label class="radioLabel" for="tab-2_12">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>CORE</b><br><em>COntextual REasoning</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide2 ch-item"
+                                                 style="background-image:url('/static/slides/computationlogic/computationlogic2.png');">
+                                                <div class="ch-info"><span><div>
+                                                    Contextual reasoning plays a fundamental role in linguistics, AI, logic, functional programming and theorem proving. CORE investigates its logical foundation and explores its ramifications in meta-programming and meta-reasoning.</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="radio" id="tab-3_12"
+                                               name="tab-group-1_12">
+                                        <label class="radioLabel" for="tab-3_12">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>PROMIS</b><br><em>Safety of computational systems</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide3 ch-item"
+                                                 style="background-image:url('/static/slides/computationlogic/computationlogic3.png');">
+                                                <div class="ch-info"><span><div>
+                                                    The goal of this international collaboration with INRIA, CMU and UMn is to develop a unified framework for specifying and certifying safety properties of computational systems, in particular distributed computation.</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                        <p class="pull-right" style="padding: 10px 10px 0 0">Professor
+                                            
+                                                <a href="http://www.cs.mcgill.ca/~bpientka/" target="_blank">Brigitte Pientka</a>
+                                                
+                                            
+                                        </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--end of desktop version of research slides-->
+                    
+                        <div class="item index_research_slide ">
+
+                            <div class="index_research_mobile"><!--mobile version of research slides-->
+
+
+                            </div>
+                            <div class="index_research_desktop"><!--desktop version of research slides-->
+                                <h1>Computer Graphics Lab</h1>
+
+                                <h2>Physically based animation / Deformation / Contact / Modeling motion and control of humans and animals / Interaction capture</h2>
+
+                                <div class="tabs">
+                                    <div class="tab">
+                                        <input type="radio" id="tab-1_13"
+                                               name="tab-group-1_13" checked>
+                                        <label class="radioLabel" for="tab-1_13">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>COMPOSITE FINITE ELEMENTS</b><br><em>Embedding of linear elastic deformable models</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide1 ch-item"
+                                                 style="background-image:url('/static/slides/animation/animation1.png');">
+                                                <div class="ch-info"><span>
+														<div>A new technique results in significant improvements in the efficient physically based simulation of highly detailed objects, taking into account topological details, varying material properties, and empty space.</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="radio" id="tab-2_13"
+                                               name="tab-group-1_13">
+                                        <label class="radioLabel" for="tab-2_13">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>HANDNAVIGATOR</b><br><em>Hands-on interaction for desktop virtual reality</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide2 ch-item"
+                                                 style="background-image:url('/static/slides/animation/animation2.png');">
+                                                <div class="ch-info"><span><div>
+                                                    Aimed at hands-on manipulation of digital models through natural hand gestures, this novel system is composed of a new physical interaction device coupled with a simulated compliant virtual hand model.</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="radio" id="tab-3_13"
+                                               name="tab-group-1_13">
+                                        <label class="radioLabel" for="tab-3_13">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>MODAL LOCOMOTION</b><br><em>Animating virtual character locomotion</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide3 ch-item"
+                                                 style="background-image:url('/static/slides/animation/animation3.png');">
+                                                <div class="ch-info"><span><div>
+                                                    Efficient locomotion should exploit the natural passive response of the character&#39;s dynamical system, specifically focusing on the natural vibration modes, which are affected by parameters such as shape, size, mass, and joint stiffness.</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                        <p class="pull-right" style="padding: 10px 10px 0 0">Professor
+                                            
+                                                <a href="http://www.cs.mcgill.ca/~kry/" target="_blank">Paul Kry</a>
+                                                
+                                            
+                                        </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--end of desktop version of research slides-->
+                    
+                        <div class="item index_research_slide ">
+
+                            <div class="index_research_mobile"><!--mobile version of research slides-->
+
+
+                            </div>
+                            <div class="index_research_desktop"><!--desktop version of research slides-->
+                                <h1>Computational Complexity Lab</h1>
+
+                                <h2>Algebra / Communication complexity / Boolean functions</h2>
+
+                                <div class="tabs">
+                                    <div class="tab">
+                                        <input type="radio" id="tab-1_14"
+                                               name="tab-group-1_14" checked>
+                                        <label class="radioLabel" for="tab-1_14">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>ALGEBRA</b><br><em>Understanding computations realised by finite-state machines</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide1 ch-item"
+                                                 style="background-image:url('/static/slides/computationalcomplex/computationalcomplex1.png');">
+                                                <div class="ch-info"><span>
+														<div>Algebra is useful in understanding computations realized by finite-state machines. Extending ideas and techniques coming from these investigations to other research domains: boolean circuits, computational learning, automated verification, constraint satisfaction, etc.</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="radio" id="tab-2_14"
+                                               name="tab-group-1_14">
+                                        <label class="radioLabel" for="tab-2_14">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>COMMUNICATION COMPLEXITY</b><br><em>Fourier analysis and its applicaions</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide2 ch-item"
+                                                 style="background-image:url('/static/slides/computationalcomplex/computationalcomplex2.png');">
+                                                <div class="ch-info"><span><div>
+                                                    How many bits two computers need to communicate with each other in order to compute a function - efficient solutions can be viewed as efficiently solving certain communication tasks, which allows studying the computational hardness of problems in this context.</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="radio" id="tab-3_14"
+                                               name="tab-group-1_14">
+                                        <label class="radioLabel" for="tab-3_14">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>BOOLEAN FUNCTIONS</b><br><em>Animating virtual character locomotion</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide3 ch-item"
+                                                 style="background-image:url('/static/slides/computationalcomplex/computationalcomplex3.png');">
+                                                <div class="ch-info"><span><div>
+                                                    Boolean functions are central to complexity theory and combinatorics as objects of interest in these areas can often be represented as such. Fourier analysis provides some of the strongest tools, with applications to graph theory, circuit complexity, communication complexity, etc.</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                        <p class="pull-right" style="padding: 10px 10px 0 0">Professor
+                                            
+                                                <a href="http://www.cs.mcgill.ca/~denis/" target="_blank">Denis Therien</a>
+                                                
+                                            
+                                        </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--end of desktop version of research slides-->
+                    
+                        <div class="item index_research_slide ">
+
+                            <div class="index_research_mobile"><!--mobile version of research slides-->
+
+
+                            </div>
+                            <div class="index_research_desktop"><!--desktop version of research slides-->
+                                <h1>Computational Vision Lab</h1>
+
+                                <h2>Image motion in cluttered scenes / Flow visualization / Specular reflections / Blur, depth, and occlusions / Light source modelling</h2>
+
+                                <div class="tabs">
+                                    <div class="tab">
+                                        <input type="radio" id="tab-1_15"
+                                               name="tab-group-1_15" checked>
+                                        <label class="radioLabel" for="tab-1_15">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>SPECULAR REFLECTIONS</b><br><em>Shading &amp; shape</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide1 ch-item"
+                                                 style="background-image:url('/static/slides/computationalvision/computationalvision1.png');">
+                                                <div class="ch-info"><span>
+														<div>How do we judge hills and valleys from smooth patterns reflected in a surface?
+</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="radio" id="tab-2_15"
+                                               name="tab-group-1_15">
+                                        <label class="radioLabel" for="tab-2_15">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>3D CLUTTERED SCENES</b><br><em>Occlusions, size &amp; density</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide2 ch-item"
+                                                 style="background-image:url('/static/slides/computationalvision/computationalvision2.png');">
+                                                <div class="ch-info"><span><div>
+                                                    How do we use spatial arrangement, scale, and blur to perceive surface orientation and distance?</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="radio" id="tab-3_15"
+                                               name="tab-group-1_15">
+                                        <label class="radioLabel" for="tab-3_15">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>TEXTURE AND FOCUS</b><br><em>Spatial arrangement, scale &amp; blur</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide3 ch-item"
+                                                 style="background-image:url('/static/slides/computationalvision/computationalvision3.png');">
+                                                <div class="ch-info"><span><div>
+                                                    Boolean functions are central to complexity theory and combinatorics as objects of interest in these areas can often be represented as such. Fourier analysis provides some of the strongest tools, with applications to graph theory, circuit complexity, communication complexity, etc.
+</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                        <p class="pull-right" style="padding: 10px 10px 0 0">Professor
+                                            
+                                                <a href="http://www.cim.mcgill.ca/~langer/" target="_blank">Michael Langer</a>
+                                                
+                                            
+                                        </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--end of desktop version of research slides-->
+                    
+                        <div class="item index_research_slide ">
+
+                            <div class="index_research_mobile"><!--mobile version of research slides-->
+
+
+                            </div>
+                            <div class="index_research_desktop"><!--desktop version of research slides-->
+                                <h1>Cyber-Physical Systems Lab</h1>
+
+                                <h2>Design of secure and trusted networked computing systems / Authentication / Access control / Rights management</h2>
+
+                                <div class="tabs">
+                                    <div class="tab">
+                                        <input type="radio" id="tab-1_16"
+                                               name="tab-group-1_16" checked>
+                                        <label class="radioLabel" for="tab-1_16">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>GREEN COMPUTING</b><br><em>Environmentally sustainable computing and IT</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide1 ch-item"
+                                                 style="background-image:url('/static/slides/cps/cps1.png');">
+                                                <div class="ch-info"><span>
+														<div>Some goals of Green IT are maximizing energy efficiency during the product&#39;s lifetime and promoting the recyclability / biodegradability of defunct products and factory waste - using computers as energy-efficient as possible and designing for efficiency-related technologies.</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="radio" id="tab-2_16"
+                                               name="tab-group-1_16">
+                                        <label class="radioLabel" for="tab-2_16">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>SYSTEMS AND NETWORKING SUPPORT FOR CPS</b><br><em>Cyber-physical systems</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide2 ch-item"
+                                                 style="background-image:url('/static/slides/cps/cps2.png');">
+                                                <div class="ch-info"><span><div>
+                                                    Research will improve the link between computational and physical elements in CPS, and broadening its potential in dimensions including intervention (eg collision avoidance), precision (eg robotic surgery and nano-level manufacturing), and coordination (eg air traffic control).</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="radio" id="tab-3_16"
+                                               name="tab-group-1_16">
+                                        <label class="radioLabel" for="tab-3_16">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>SOCIAL COMPUTING</b><br><em>Intersection of social behaviour and computational systems</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide3 ch-item"
+                                                 style="background-image:url('/static/slides/cps/cps3.png');">
+                                                <div class="ch-info"><span><div>
+                                                    Designing digital systems to make socially produced information available to their users, either directly, after having been filtered and aggregated, or indirectly - in all cases, info that is produced by a group of people is used to provide or enhance the functioning of a system.</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                        <p class="pull-right" style="padding: 10px 10px 0 0">Professor
+                                            
+                                                <a href="http://www.cs.mcgill.ca/~xueliu/" target="_blank">Xue Liu</a>
+                                                
+                                            
+                                        </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--end of desktop version of research slides-->
+                    
+                        <div class="item index_research_slide ">
+
+                            <div class="index_research_mobile"><!--mobile version of research slides-->
+
+
+                            </div>
+                            <div class="index_research_desktop"><!--desktop version of research slides-->
+                                <h1>Software Engineering Lab</h1>
+
+                                <h2>Dependable software development / Aspect-orientation / Research applications to massively multiplayer games</h2>
+
+                                <div class="tabs">
+                                    <div class="tab">
+                                        <input type="radio" id="tab-1_17"
+                                               name="tab-group-1_17" checked>
+                                        <label class="radioLabel" for="tab-1_17">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>MAMMOTH</b><br><em>MMO game research framework</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide1 ch-item"
+                                                 style="background-image:url('/static/slides/softwareeng/softwareeng1.png');">
+                                                <div class="ch-info"><span>
+														<div>The goal is to provide an environment for experimentation in areas such as distributed systems, fault tolerance, databases, modeling and simulation, artificial intelligence and aspect-orientation, partnered with Quazal, EA Montreal, and EJ-Technologies.</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="radio" id="tab-2_17"
+                                               name="tab-group-1_17">
+                                        <label class="radioLabel" for="tab-2_17">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>RAM</b><br><em>Reusable aspect models</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide2 ch-item"
+                                                 style="background-image:url('/static/slides/softwareeng/softwareeng2.png');">
+                                                <div class="ch-info"><span><div>
+                                                    A novel approach to aspect-oriented modeling that makes scalable multi-view modeling possible, allowing the modeler to define stand-alone reusable aspect models, which support the modeling of structure and behavior (UML diagrams).</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="radio" id="tab-3_17"
+                                               name="tab-group-1_17">
+                                        <label class="radioLabel" for="tab-3_17">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>TOUCHRAM</b><br><em>A multi-touch enabled tool for aspect-oriented software design</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide3 ch-item"
+                                                 style="background-image:url('/static/slides/softwareeng/softwareeng3.png');">
+                                                <div class="ch-info"><span><div>
+                                                    TouchRAM is aimed at developing scalable and reusable software design models, giving the designer access to a vast library of reusable design models encoding essential recurring design concerns and featuring a multi-touch enabled user interface.</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                        <p class="pull-right" style="padding: 10px 10px 0 0">Professor
+                                            
+                                                <a href="http://www.cs.mcgill.ca/~joerg/Home/Jorgs_Home.html" target="_blank">Jörg Kienzle</a>
+                                                
+                                            
+                                        </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--end of desktop version of research slides-->
+                    
+                        <div class="item index_research_slide ">
+
+                            <div class="index_research_mobile"><!--mobile version of research slides-->
+
+
+                            </div>
+                            <div class="index_research_desktop"><!--desktop version of research slides-->
+                                <h1>Sable Lab</h1>
+
+                                <h2>Tool development for computation-intensive problems in Java / Better understanding and faster execution of Java programs</h2>
+
+                                <div class="tabs">
+                                    <div class="tab">
+                                        <input type="radio" id="tab-1_18"
+                                               name="tab-group-1_18" checked>
+                                        <label class="radioLabel" for="tab-1_18">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>MCLAB</b><br><em>Extensible compiler and VM Toolkit for MATLAB</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide1 ch-item"
+                                                 style="background-image:url('/static/slides/sable/sable1.png');">
+                                                <div class="ch-info"><span>
+														<div>The McLab project aims to provide languages, compilers and virtual machines for dynamic scientific languages, starting with the MATLAB language, and extensions of the MATLAB language such as AspectMatlab.</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="radio" id="tab-2_18"
+                                               name="tab-group-1_18">
+                                        <label class="radioLabel" for="tab-2_18">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>ABC</b><br><em>The AspectBench Compiler for AspectJ</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide2 ch-item"
+                                                 style="background-image:url('/static/slides/sable/sable2.png');">
+                                                <div class="ch-info"><span><div>
+                                                    A complete implementation of AspectJ that aims to make it easy to implement both extensions and optimisations of the core language, providing two front ends: one built on the Polyglot framework, the other an extension of the JastAddJ extensible Java compiler.</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="radio" id="tab-3_18"
+                                               name="tab-group-1_18">
+                                        <label class="radioLabel" for="tab-3_18">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>SOOT</b><br><em>Java optimization framework</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide3 ch-item"
+                                                 style="background-image:url('/static/slides/sable/sable3.png');">
+                                                <div class="ch-info"><span><div>
+                                                    Provides four intermediate representations for analyzing and transforming Java bytecode, and can be used as a standalone tool to optimize or inspect class files, as well as a framework to develop optimizations or transformations on Java bytecode.</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                        <p class="pull-right" style="padding: 10px 10px 0 0">Professors
+                                            
+                                                <a href="http://www.sable.mcgill.ca/~hendren/" target="_blank">Laurie Hendren</a>
+                                                , 
+                                            
+                                                <a href="http://www.sable.mcgill.ca/~clump/" target="_blank">Clark Verbrugge</a>
+                                                
+                                            
+                                        </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--end of desktop version of research slides-->
+                    
+                        <div class="item index_research_slide ">
+
+                            <div class="index_research_mobile"><!--mobile version of research slides-->
+
+
+                            </div>
+                            <div class="index_research_desktop"><!--desktop version of research slides-->
+                                <h1>Scientific Computing Lab</h1>
+
+                                <h2>Scientific computing / Matrix computations / Numerical estimation methods / Communications / GPS positioning / Localization in wireless networks</h2>
+
+                                <div class="tabs">
+                                    <div class="tab">
+                                        <input type="radio" id="tab-1_19"
+                                               name="tab-group-1_19" checked>
+                                        <label class="radioLabel" for="tab-1_19">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>LARGE SPARSE MATRIX CALCULATIONS</b><br><em>Algorithms and data structures</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide1 ch-item"
+                                                 style="background-image:url('/static/slides/scientificcomputing/scientificcomputing1.png');">
+                                                <div class="ch-info"><span>
+														<div>In the subfield of numerical analysis, a sparse matrix is populated primarily with zeros. When storing and manipulating these matrices on a computer, it is beneficial and often necessary to use specialized algorithms and data structures.</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="radio" id="tab-2_19"
+                                               name="tab-group-1_19">
+                                        <label class="radioLabel" for="tab-2_19">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>NUMERICAL METHODS AND THEIR APPLICATIONS</b><br><em>Computational analysis</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide2 ch-item"
+                                                 style="background-image:url('/static/slides/scientificcomputing/scientificcomputing2.png');">
+                                                <div class="ch-info"><span><div>
+                                                    Developing algorithms that use numerical approximation for the problems of mathematical analysis using various methods for lattice reduction and integer least squares problems, and researching their applications in GPS and wireless communications, etc.
+</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="radio" id="tab-3_19"
+                                               name="tab-group-1_19">
+                                        <label class="radioLabel" for="tab-3_19">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>POWER MINIMIZATION OF MOBILE POSITIONING</b><br><em>Location-based services</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide3 ch-item"
+                                                 style="background-image:url('/static/slides/scientificcomputing/scientificcomputing3.png');">
+                                                <div class="ch-info"><span><div>
+                                                     A modern mobile device must position itself and support remote position tracking. Research involves building low-power location-based services that can run for hours on mobile phones depending on how different phone features and different types of LBSs consume power.</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                        <p class="pull-right" style="padding: 10px 10px 0 0">Professor
+                                            
+                                                <a href="http://www.cs.mcgill.ca/~chang/" target="_blank">Xiao-Wen Chang</a>
+                                                
+                                            
+                                        </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--end of desktop version of research slides-->
+                    
+                        <div class="item index_research_slide ">
+
+                            <div class="index_research_mobile"><!--mobile version of research slides-->
+
+
+                            </div>
+                            <div class="index_research_desktop"><!--desktop version of research slides-->
+                                <h1>Cryptography Lab</h1>
+
+                                <h2>Theoretical and practical crypography / Quantum information theory / Quantum computing</h2>
+
+                                <div class="tabs">
+                                    <div class="tab">
+                                        <input type="radio" id="tab-1_20"
+                                               name="tab-group-1_20" checked>
+                                        <label class="radioLabel" for="tab-1_20">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>TWO PROVERS IN ISOLATION</b><br><em>Classical and quantum strategies</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide1 ch-item"
+                                                 style="background-image:url('/static/slides/cryptography/cryptography1.png');">
+                                                <div class="ch-info"><span>
+														<div>We investigate the security of cryptographic protocols in a scenario where two special participants are placed &quot;in isolation&quot;. Based on the concept of &quot;non-locality&quot; issued from quantum mechanics, isolation is in essence &quot;no non-locality&quot;.</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="radio" id="tab-2_20"
+                                               name="tab-group-1_20">
+                                        <label class="radioLabel" for="tab-2_20">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>POST-QUANTUM OBLIVIOUS TRANSFER</b><br><em>Encryption scheme</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide2 ch-item"
+                                                 style="background-image:url('/static/slides/cryptography/cryptography2.png');">
+                                                <div class="ch-info"><span><div>
+                                                    The new concept of &quot;weakly random self-reducible&quot; crypto-systems is exploited to construct secure cryptographic primitives from complexity assumptions that appear secure even in the presence of a quantum adversary.</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="radio" id="tab-3_20"
+                                               name="tab-group-1_20">
+                                        <label class="radioLabel" for="tab-3_20">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>POST-QUANTUM ZERO-KNOWLEDGE</b><br><em>Zero-knowledge proof systems</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide3 ch-item"
+                                                 style="background-image:url('/static/slides/cryptography/cryptography3.png');">
+                                                <div class="ch-info"><span><div>
+                                                    Describing and relating several zero-knowledge languages from the fields of coding theory, lattices, and multivariate polynomials. As far as we know these problems are intractable, even equipped with a quantum computer.</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                        <p class="pull-right" style="padding: 10px 10px 0 0">Professor
+                                            
+                                                <a href="http://www.cs.mcgill.ca/~crepeau/" target="_blank">Claude Crepeau</a>
+                                                
+                                            
+                                        </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--end of desktop version of research slides-->
+                    
+                        <div class="item index_research_slide ">
+
+                            <div class="index_research_mobile"><!--mobile version of research slides-->
+
+
+                            </div>
+                            <div class="index_research_desktop"><!--desktop version of research slides-->
+                                <h1>Mobile Robotics Lab</h1>
+
+                                <h2>Sensor-based robotics</h2>
+
+                                <div class="tabs">
+                                    <div class="tab">
+                                        <input type="radio" id="tab-1_21"
+                                               name="tab-group-1_21" checked>
+                                        <label class="radioLabel" for="tab-1_21">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>Aqua</b><br><em> Marine and amphibious robot sensing and locomotion</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide1 ch-item"
+                                                 style="background-image:url('/static/slides/dudek/aquaswim.jpeg');">
+                                                <div class="ch-info"><span>
+														<div>This project deals with underwater and amphibious robotics, and is the umbrella for a host of different specific research probjects at McGill, as well as in collaboration with our associates at York University. Most of the sub-projects enatil work with out Aqua family of underwater hexapod robots. </div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="radio" id="tab-2_21"
+                                               name="tab-group-1_21">
+                                        <label class="radioLabel" for="tab-2_21">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>Human-robot interaction</b><br><em> Smart interactions for humans and robotics</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide2 ch-item"
+                                                 style="background-image:url('/static/slides/dudek/DSCN1831-1.jpeg');">
+                                                <div class="ch-info"><span><div>
+                                                    We examine the construction of a vision-based interface for human-robot interaction and control for autonomous robots in arbitrary environments. The goal is to enable a human operator to control and program the robot without the need for any complicated input interface, and also enable the robot to learn about its environment and the operator. </div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="radio" id="tab-3_21"
+                                               name="tab-group-1_21">
+                                        <label class="radioLabel" for="tab-3_21">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>GSSP</b><br><em>Graphical state-space programming for robot control</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide3 ch-item"
+                                                 style="background-image:url('/static/slides/dudek/GSSP.png');">
+                                                <div class="ch-info"><span><div>
+                                                    We are developing an interface for controlling mobile robots that combines aspects of graphical trajectory specification and state space programming. Our objective is to facilitate the programming and debugging of robot execution plans, containing both scheduled trajectories and activities, as well as contingency plans and failsafe behaviors. </div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                        <p class="pull-right" style="padding: 10px 10px 0 0">Professor
+                                            
+                                                <a href="http://www.cim.mcgill.ca/~dudek/" target="_blank">Gregory Dudek</a>
+                                                
+                                            
+                                        </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--end of desktop version of research slides-->
+                    
+                        <div class="item index_research_slide ">
+
+                            <div class="index_research_mobile"><!--mobile version of research slides-->
+
+
+                            </div>
+                            <div class="index_research_desktop"><!--desktop version of research slides-->
+                                <h1>Reasoning and Learning Lab: Computational Linguistics</h1>
+
+                                <h2>Natural language processing / Computational semantics / Natural language generation / Automatic summarization</h2>
+
+                                <div class="tabs">
+                                    <div class="tab">
+                                        <input type="radio" id="tab-1_22"
+                                               name="tab-group-1_22" checked>
+                                        <label class="radioLabel" for="tab-1_22">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>Computational Semantics</b><br><em>Understanding the meaning of words, phrases and passages</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide1 ch-item"
+                                                 style="background-image:url('/static/slides/cheung/cheung1.jpg');">
+                                                <div class="ch-info"><span>
+														<div>We are investigating how to understand the meaning of a word, phrase, or entire passage using vector space models of semantics. The goal of our models is to make inferences about the state of the world based on the contents of the text.</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="radio" id="tab-2_22"
+                                               name="tab-group-1_22">
+                                        <label class="radioLabel" for="tab-2_22">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>Natural Language Generation</b><br><em>Generating languages of particular styles</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide2 ch-item"
+                                                 style="background-image:url('/static/slides/cheung/cheung2.jpg');">
+                                                <div class="ch-info"><span><div>
+                                                    With the proliferation of smart devices, we will need more fluent and natural ways to receive information from automatic systems. We are working on methods to generate language of a particular style, whether it is formal text or a casual conversation.</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <input type="radio" id="tab-3_22"
+                                               name="tab-group-1_22">
+                                        <label class="radioLabel" for="tab-3_22">
+                                            <div class="tab-item"><span
+                                                    class="tab-span"><b>Event Extraction and Understanding</b><br><em>Extract events from text using computational models</em></span>
+                                            </div>
+                                        </label>
+
+                                        <div class="content">
+                                            <div class="slide3 ch-item"
+                                                 style="background-image:url('/static/slides/cheung/cheung3.jpg');">
+                                                <div class="ch-info"><span><div>
+                                                    What happens at a play? The audience enters the theatre, the lights go off, then the performance begins! We are developing computational models to extract typical sequences of events and their participants from text.</div></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                        <p class="pull-right" style="padding: 10px 10px 0 0">Professor
+                                            
+                                                <a href="http://www.cs.mcgill.ca/~jcheung" target="_blank">Jackie Chi Kit Cheung</a>
+                                                
+                                            
+                                        </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--end of desktop version of research slides-->
+                    
+                    </div>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-slideshow" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-slideshow" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div id="rightBox" class="indexUpcoming col-md-4 col-lg-5 radius-top radius-bottom"
+                 style="padding:2px;margin:0;">
+                
+                <div id="upcomingTitle" class="red-underline banner-upcoming radius-top">
+                    <div class="banner-title radius-top-left red-underline" style="z-index:2; max-width:60%">
+                        <!--				<h4 class="news"><span>upcoming</span>@socs</h4>   -->
+                    </div>
+                    <div class="left-triangle" style="z-index:1"></div>
+                    <div class="upcoming-title" style="position:absolute">
+                        <h4 class="news"><a href="/news/events"><span>events</span>@cs</a></h4>
+                    </div>
+                </div>
+                <div id="rightBoxUpcoming" class="section radius-bottom"
+                     style="background-color: #fff;min-height:370px">
+                    <div id="rightBoxUpcomingContent">
+                        
+                            
+                                <a href="/news/colloquium/122">
+                            
+                        <div class="newsblock upcoming_events_entry">
+                            <div style="">
+                                <div class="calendar-box radius-top radius-bottom">
+                                    <div class="calendar-month radius-top">Oct</div>
+                                    <div class="calendar-date">30</div>
+                                </div>
+                            </div>
+                            <div style="padding-left:10px; display:block;;float:left;min-width:60%;max-width:74%">
+                                <h5 class="news_title">Information Foraging Theory in Software Navigation <br><span
+                                        class="event_kind_tag">colloquium</span></h5>
+                            </div>
+                            <div style="clear:both;"></div>
+                        </div>
+                        </a>
+                            <hr class="news_hr">
+                        
+                            
+                                <a href="/news/seminar/132">
+                            
+                        <div class="newsblock upcoming_events_entry">
+                            <div style="">
+                                <div class="calendar-box radius-top radius-bottom">
+                                    <div class="calendar-month radius-top">Nov</div>
+                                    <div class="calendar-date">03</div>
+                                </div>
+                            </div>
+                            <div style="padding-left:10px; display:block;;float:left;min-width:60%;max-width:74%">
+                                <h5 class="news_title">Computational Riboswitch Detection Using Inverse RNA Folding <br><span
+                                        class="event_kind_tag">seminar</span></h5>
+                            </div>
+                            <div style="clear:both;"></div>
+                        </div>
+                        </a>
+                            <hr class="news_hr">
+                        
+                            
+                                <a href="/news/colloquium/124">
+                            
+                        <div class="newsblock upcoming_events_entry">
+                            <div style="">
+                                <div class="calendar-box radius-top radius-bottom">
+                                    <div class="calendar-month radius-top">Nov</div>
+                                    <div class="calendar-date">06</div>
+                                </div>
+                            </div>
+                            <div style="padding-left:10px; display:block;;float:left;min-width:60%;max-width:74%">
+                                <h5 class="news_title">Entity-Centric Data Management <br><span
+                                        class="event_kind_tag">colloquium</span></h5>
+                            </div>
+                            <div style="clear:both;"></div>
+                        </div>
+                        </a>
+                            <hr class="news_hr">
+                        
+
+                        
+
+                        <div style="text-align:center;padding-top:10px;">
+                            <a href="/news/events">View more events</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <hr class="seperator"> -->
+    </div><!-- end of container-->
+    <div class="lowercontainer" style="margin-bottom: 25px">  <!-- style="background:#e0e0e0;" -->
+    <div class="container" style="padding-left:0;padding-right:0;">
+        <div class="row indexRow">
+            <div class="col-md-8 col-lg-7 radius-top radius-bottom" style="padding:2px;margin:0;">
+                <div class="red-underline banner-news radius-top">
+                    <div class="banner-title radius-top-left red-underline">
+                        <h4 class="news"><a href="/news/achievements"><span>achievements</span>@cs</a></h4>
+                    </div>
+                    <div class="left-triangle"></div>
+                </div>
+
+                <div class="news_section section radius-bottom" style="background-color: #fff;min-height:415px;">
+                    
+                    
+                        <a href="/news/award/49">
+                            <div class="newsblock latest_news_entry">
+                                <h5 class="news_title"><span class="darkgrey">Oct 11, 2015</span>
+                                    <span class="event_kind_tag">award</span> Prof. M. Blanchette elected Member of the College of New Scholars, Artists and Scientists  of the Royal Society of Canada.
+                                </h5>
+                            </div>
+                        </a>
+                        <hr class="news_hr">
+                    
+                        <a href="/news/announcement/47">
+                            <div class="newsblock latest_news_entry">
+                                <h5 class="news_title"><span class="darkgrey">Apr 12, 2015</span>
+                                    <span class="event_kind_tag">announcement</span> Research group at CS uncovers flaws with Facebook&#39;s Like mechanism
+                                </h5>
+                            </div>
+                        </a>
+                        <hr class="news_hr">
+                    
+                        <a href="/news/award/37">
+                            <div class="newsblock latest_news_entry">
+                                <h5 class="news_title"><span class="darkgrey">Apr 06, 2015</span>
+                                    <span class="event_kind_tag">award</span> Emeritus Professor Chris Paige is named a SIAM Fellow
+                                </h5>
+                            </div>
+                        </a>
+                        <hr class="news_hr">
+                    
+                        <a href="/news/award/38">
+                            <div class="newsblock latest_news_entry">
+                                <h5 class="news_title"><span class="darkgrey">Apr 06, 2015</span>
+                                    <span class="event_kind_tag">award</span> Prof. Joelle Pineau named a William Dawson Scholar at McGill 
+                                </h5>
+                            </div>
+                        </a>
+                        <hr class="news_hr">
+                    
+                        <a href="/news/award/39">
+                            <div class="newsblock latest_news_entry">
+                                <h5 class="news_title"><span class="darkgrey">Apr 06, 2015</span>
+                                    <span class="event_kind_tag">award</span> CS student Pascale Gourdeau wins Anita Borg Fellowship
+                                </h5>
+                            </div>
+                        </a>
+                        <hr class="news_hr">
+                    
+                        <a href="/news/award/26">
+                            <div class="newsblock latest_news_entry">
+                                <h5 class="news_title"><span class="darkgrey">Dec 03, 2014</span>
+                                    <span class="event_kind_tag">award</span> Annie T.T. Ying and Professor Martin Robillard, Distinguished Paper Award
+                                </h5>
+                            </div>
+                        </a>
+                        <hr class="news_hr">
+                    
+                        <a href="/news/award/8">
+                            <div class="newsblock latest_news_entry">
+                                <h5 class="news_title"><span class="darkgrey">Apr 01, 2014</span>
+                                    <span class="event_kind_tag">award</span> Mingyuan Xia awarded IBM Ph.D. fellowship
+                                </h5>
+                            </div>
+                        </a>
+                        <hr class="news_hr">
+                    
+                        <a href="/news/award/9">
+                            <div class="newsblock latest_news_entry">
+                                <h5 class="news_title"><span class="darkgrey">Nov 07, 2013</span>
+                                    <span class="event_kind_tag">award</span> Prof. P. Panangaden named Royal Society of Canada Fellow
+                                </h5>
+                            </div>
+                        </a>
+                        <hr class="news_hr">
+                    
+                    <div style="text-align:center;padding-top:10px">
+                        <a href="/news/achievements">View more achievements</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-5 radius-top radius-bottom" style="padding:2px;margin:0;">
+                <div class="red-underline banner-award radius-top">
+                    <div class="banner-title radius-top-left red-underline">
+                        <h4 class="news"><a href="/news/postings"><span>notices</span>@cs</a></h4>
+                    </div>
+                    <div class="left-triangle"></div>
+                </div>
+                <div class="section radius-bottom" style="background-color: #fff;min-height:415px;">
+                    
+                        <a href="/news/job_posting/74">
+                            <div class="newsblock">
+                                <h5 class="news_title">
+                                    Looking for an Experienced Web Scraper </h5>
+                                <h5 class="grey" style="margin:5px 0px;padding:0px;font-weight:300"><span
+                                        class="darkgrey">Oct 28, 2015</span>
+                                    <span class="event_kind_tag">job posting</span></h5>
+                            </div>
+                        </a>
+                        <hr class="news_hr">
+                    
+                        <a href="/news/job_posting/72">
+                            <div class="newsblock">
+                                <h5 class="news_title">
+                                    Assurances Fort Insurance is looking for part-time computer systems support... </h5>
+                                <h5 class="grey" style="margin:5px 0px;padding:0px;font-weight:300"><span
+                                        class="darkgrey">Oct 22, 2015</span>
+                                    <span class="event_kind_tag">job posting</span></h5>
+                            </div>
+                        </a>
+                        <hr class="news_hr">
+                    
+                        <a href="/news/job_posting/71">
+                            <div class="newsblock">
+                                <h5 class="news_title">
+                                    Research Associate </h5>
+                                <h5 class="grey" style="margin:5px 0px;padding:0px;font-weight:300"><span
+                                        class="darkgrey">Oct 06, 2015</span>
+                                    <span class="event_kind_tag">job posting</span></h5>
+                            </div>
+                        </a>
+                        <hr class="news_hr">
+                    
+                        <a href="/news/job_posting/70">
+                            <div class="newsblock">
+                                <h5 class="news_title">
+                                    Looking for a freelance web designer/web developer  </h5>
+                                <h5 class="grey" style="margin:5px 0px;padding:0px;font-weight:300"><span
+                                        class="darkgrey">Oct 02, 2015</span>
+                                    <span class="event_kind_tag">job posting</span></h5>
+                            </div>
+                        </a>
+                        <hr class="news_hr">
+                    
+                        <a href="/news/job_posting/64">
+                            <div class="newsblock">
+                                <h5 class="news_title">
+                                    Volunteer Research Assistant - Developing software for predicting protein-protein interaction </h5>
+                                <h5 class="grey" style="margin:5px 0px;padding:0px;font-weight:300"><span
+                                        class="darkgrey">Sep 01, 2015</span>
+                                    <span class="event_kind_tag">job posting</span></h5>
+                            </div>
+                        </a>
+                        <hr class="news_hr">
+                    
+                    <div style="text-align:center;padding-top:10px;"><a href="/news/postings">View more notices</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!--end of container-->
+
+    <script>
+        $(document).ready(function ($) {
+            $('#tabs').tabulous({
+                effect: 'scaleUp'
+            });
+        });
+    </script>
+<br>
+
+            </div>
+        </div>
+
+        <div id="footer" class="footer">
+            <div class="container">
+                <div id="footer-information" class="row" style="margin-top:20px;">
+                    <div class="col-md-8 col-sm-12">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-4 col-md-4" style="margin:10px 0 10px 0; ">
+                                <address>
+                                    <strong style="color:white;">Main Office</strong><br>
+                                    McConnell Engineering Bldg.<br/> Room 318<br>
+                                    3480 University <br>
+                                    Montreal, Qc, Canada<br>
+                                    H3A 0E9<br>
+                                    <i class="icon-phone linkicon"></i> (514) 398-7071 <br>
+                                    <i class="icon-print linkicon"></i> (514) 398-3883
+                                </address>
+                            </div>
+                            <!-- border-left: 1px dotted #fff; -->
+                            <div class="col-xs-12 col-sm-4 col-md-4" style="margin:10px 0 10px 0;">
+                                <address>
+                                    <strong style="color:white;">Help Desk</strong><br>
+                                    McConnell Engineering Bldg.<br/> Room 209N<br>
+                                    3480 University <br>
+                                    Montreal, Qc, Canada<br>
+                                    H3A 0E9<br>
+                                    <a href="mailto:help@cs.mcgill.ca"><i class="icon-envelope linkicon"></i>
+                                        help@cs.mcgill.ca
+                                    </a>
+                                    <br>
+                                    <i class="icon-phone linkicon"></i> (514) 398-7087 <br>
+                                    <i class="icon-print linkicon"></i> (514) 398-3883 <br>
+                                </address>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 col-md-4" style="margin:10px 0 10px 0;">
+                                <address>
+                                    <strong style="color:white;">Quick Links</strong><br>
+                                    <a href="http://mail.cs.mcgill.ca">Webmail</a> <br>
+                                    <a href="http://reservations.cs.mcgill.ca">Room Reservations</a> <br>
+                                    <a href="/docs">Tech Support</a> <br>
+                                    <a href="/forms">Internal</a>
+                                </address>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4">
+                        <iframe style="width:100%;height:200px;border:none;" frameborder="0" scrolling="no" marginheight="0"
+                                marginwidth="0"
+                                src="https://www.google.com/maps/ms?msid=213456729478671238348.0004e34d272f532ee8302&amp;msa=0&amp;dg=feature&amp;ie=UTF8&amp;ll=45.507204,-73.577993&amp;spn=0.011985,0.017273&amp;t=m&amp;output=embed&amp;z=15">
+                        </iframe>
+                        <br/>
+                        <small class="pull-right" style="color:white;">View
+                            <a target="_blank"
+                               href="https://www.google.com/maps/ms?msid=213456729478671238348.0004e34d272f532ee8302&amp;msa=0&amp;dg=feature&amp;ie=UTF8&amp;ll=45.507204,-73.577993&amp;spn=0.011985,0.017273&amp;t=m&amp;source=embed"
+                               style="text-decoration: none;color:#428bca;text-align:right">School of Computer Science</a>
+                            in a
+                            larger map
+                        </small>
+                    </div>
+                </div>
+                <div id="footer-credits" style="height:100px;">
+                    <div class="container">
+                        <div class="hidden-xs">
+                            <img src="/static/img/logoline2.png" style="max-height:60px;margin-top: 20px;"
+                                 class="pull-right"/>
+                        </div>
+                        <h5 style="color:#A0A0A0;font-weight:200;font-size:18px; margin-top: 60px;">&copy; McGill
+                            University 2015. <span><a class="credit" href="#credit" data-toggle="popover"
+                                                               data-placement="top"
+                                                               data-content="Jimmy Li, Yunjing Tian, Marc Jarvis, Monica Ung, Corey"
+                                                               style="color:#fff;text-decoration:none;">Credits</a></span>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="back-to-top">
+            <a href="#" class="back-to-top"><span class="glyphicon glyphicon-chevron-up"></span></a>
+        </div>
+
+
+        <script>
+            //Credit pop-up effect
+            $('.credit').popover();
+            function back_to_top() {
+                var offset = 220;
+                var duration = 500;
+
+                jQuery(window).scroll(function () {
+                    if (jQuery(this).scrollTop() > offset) {
+                        jQuery('.back-to-top').fadeIn(duration);
+                    } else {
+                        jQuery('.back-to-top').fadeOut(duration);
+                    }
+                });
+
+                jQuery('.back-to-top').click(function (event) {
+                    event.preventDefault();
+                    jQuery('html, body').animate({scrollTop: 0}, duration);
+                    return false;
+                });
+
+                //Sticky sidebar effect
+                if (!!$('.sticky').offset()) { // make sure ".sticky" element exists
+
+                    var stickyTop = $('.sticky').offset().top; // returns number
+
+                    $(window).scroll(function () { // scroll event
+
+                        var windowTop = $(window).scrollTop(); // returns number
+
+                        if (stickyTop < windowTop) {
+                            $('.sticky').css({position: 'fixed', top: 0});
+                        }
+                        else {
+                            $('.sticky').css('position', 'static');
+                        }
+                    });
+                }
+
+                // Keeps sidebar within the boostrap col container
+                // Without code below, the sidebar background spans the whole page
+                jQuery(window).scroll(function () {
+                    var sidebar_width = $("#sidebar").width();
+                    $("#widget").width(sidebar_width);
+                });
+
+                jQuery(window).resize(function () {
+                    var sidebar_width = $("#sidebar").width();
+                    $("#widget").width(sidebar_width);
+                })
+            }
+            $(document).ready(back_to_top);
+        </script>
+    </body>
+</html>
